@@ -707,7 +707,7 @@
 </head>
 <body class="">
 
-<div id="splash">
+<div id="splash" class="hide">
   <div class="hero-tag" style="color:var(--tape);">✂️ CAPORAL DESIGN</div>
   <h1 class="splash-logo">BIENVENUE SUR<br><span>CAPORALDESIGN.COM</span></h1>
   <p class="splash-tag">Affiches · Flyers · Logos</p>
@@ -1203,7 +1203,7 @@
         </div>
       </div>
       <div style="font-family:'Inter',sans-serif; font-size:20px; font-weight:700;">
-        +225 07 47 62 63 80
+        <a href="tel:+225 07 47 62 63 80">+225 07 47 62 63 80</a>
       </div>
       <p class="pay-note">Un acompte de 50% est demandé pour démarrer le projet, le solde à la livraison.</p>
     </div>
@@ -1212,23 +1212,46 @@
 
 <button id="adminFab" aria-label="Administrateur">🔑</button>
 
-<div id="accountOverlay">
+<div id="accountOverlay" class="">
   <div class="admin-modal">
-    <h3 id="accountModalTitle">Créer mon profil</h3>
-    <p id="accountModalSub">Enregistre tes infos une fois, elles seront prêtes pour tes prochaines commandes sur ce téléphone.</p>
+    <h3 id="accountModalTitle">Mon compte</h3>
+    <p id="accountModalSub">Connecte-toi, ou crée ton compte si c'est ta première visite.</p>
 
-    <div id="accountFormView">
-      <input type="text" id="accountNameInput" placeholder="Ton nom">
-      <input type="text" id="accountPhoneInput" placeholder="Numéro WhatsApp (avec indicatif)">
-      <button class="btn btn-ink" id="accountSaveBtn">Créer mon profil</button>
+    <div id="accountTabs" style="display:flex; gap:8px; margin-bottom:16px;">
+      <button type="button" id="accountTabLogin" class="admin-cancel" style="flex:1; border:2px solid var(--line); border-radius:10px; padding:10px; font-weight:700;">Se connecter</button>
+      <button type="button" id="accountTabSignup" class="admin-cancel" style="flex:1; border:2px solid var(--line); border-radius:10px; padding:10px; font-weight:700;">Créer un compte</button>
+    </div>
+
+    <p class="admin-error" id="accountError" style="display:none; color:var(--coral); font-size:12.5px; margin:-6px 0 12px;"></p>
+
+    <div id="accountLoginView" style="display:block;">
+      <input type="email" id="loginEmailInput" placeholder="Ton email" autocapitalize="off" autocorrect="off">
+      <input type="password" id="loginPasswordInput" placeholder="Mot de passe">
+      <button class="btn btn-ink" id="accountLoginBtn">Se connecter</button>
       <button class="admin-cancel" id="accountCancelBtn">Annuler</button>
+    </div>
+
+    <div id="accountSignupView" style="display:none;">
+      <input type="text" id="signupNameInput" placeholder="Ton nom">
+      <input type="email" id="signupEmailInput" placeholder="Ton email" autocapitalize="off" autocorrect="off">
+      <input type="text" id="signupPhoneInput" placeholder="Numéro WhatsApp (avec indicatif)">
+      <input type="password" id="signupPasswordInput" placeholder="Mot de passe (6 caractères min.)">
+      <button class="btn btn-ink" id="accountSignupBtn">Créer mon compte</button>
+      <button class="admin-cancel" id="accountCancelBtn2">Annuler</button>
     </div>
 
     <div id="accountWelcomeView" style="display:none;">
       <p id="accountWelcomeText" style="font-size:14px; margin-bottom:16px;"></p>
       <button class="btn btn-ink" id="accountEditBtn">Modifier mes infos</button>
-      <button class="admin-cancel" id="accountLogoutBtn">🗑️ Supprimer mon profil</button>
+      <button class="admin-cancel" id="accountLogoutBtn">Se déconnecter</button>
       <button class="admin-cancel" id="accountCloseBtn">Fermer</button>
+    </div>
+
+    <div id="accountEditView" style="display:none;">
+      <input type="text" id="editNameInput" placeholder="Ton nom">
+      <input type="text" id="editPhoneInput" placeholder="Numéro WhatsApp (avec indicatif)">
+      <button class="btn btn-ink" id="accountEditSaveBtn">Enregistrer</button>
+      <button class="admin-cancel" id="accountEditCancelBtn">Annuler</button>
     </div>
   </div>
 </div>
@@ -1357,7 +1380,7 @@
         <div class="settings-field">
           <label for="cmbKeyInput">Clé API CallMeBot</label>
           <input type="text" id="cmbKeyInput" placeholder="Ex: 123456">
-          <p class="settings-hint">Reçois une notif WhatsApp à chaque visite et à chaque création de compte. Envoie "I allow callmebot to send me messages" au <chrome_annotation role="link" style="border-bottom: 1px solid rgb(81, 79, 69);">+34 644 59 71 65</chrome_annotation> pour obtenir ta clé.</p>
+          <p class="settings-hint">Reçois une notif WhatsApp à chaque visite et à chaque création de compte. Envoie "I allow callmebot to send me messages" au <chrome_annotation role="link" style="border-bottom: 1px solid rgb(81, 79, 69);"><a href="tel:+34 644 59 71 65">+34 644 59 71 65</a></chrome_annotation> pour obtenir ta clé.</p>
           <button class="btn btn-ink" id="cmbKeySave">Enregistrer</button>
           <span id="cmbSavedMsg" style="font-size:12.5px; color:var(--green-deep); font-weight:700; display:none; margin-top:4px;">✓ Activé</span>
           <p id="cmbStatus" class="settings-hint" style="margin-top:10px;">Aucune notification active pour l'instant.</p>
@@ -1386,7 +1409,7 @@
     </div>
     <div class="cart-items" id="cartItems"><p class="cart-empty">Aucune affiche choisie pour l'instant. Clique sur "+ Choisir ce style" sous une affiche qui te plaît.</p></div>
     <div class="cart-foot">
-      <a href="https://wa.me/2250747626380?text=Bonjour%20Caporal%20Design%20%F0%9F%91%8B%2C%20je%20suis%20Caporal%20(WhatsApp%20%2B225%200747626380).%20Je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le(s)%20style(s)%20suivant(s)%20%3A%0A%0A(aucune%20affiche%20s%C3%A9lectionn%C3%A9e%20pour%20l'instant)%0APouvez-vous%20me%20faire%20une%20proposition%20dans%20ce%20style%20%3F" id="cartWhatsapp" class="btn btn-coral" target="_blank" rel="noopener">💬 Envoyer ma sélection sur WhatsApp</a>
+      <a href="https://wa.me/2250747626380?text=Bonjour%20Caporal%20Design%20%F0%9F%91%8B%2C%20je%20suis%20Caporal%20(WhatsApp%200747626380).%20Je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le(s)%20style(s)%20suivant(s)%20%3A%0A%0A(aucune%20affiche%20s%C3%A9lectionn%C3%A9e%20pour%20l'instant)%0APouvez-vous%20me%20faire%20une%20proposition%20dans%20ce%20style%20%3F" id="cartWhatsapp" class="btn btn-coral" target="_blank" rel="noopener">💬 Envoyer ma sélection sur WhatsApp</a>
       <p class="cart-note">On te répond avec un devis basé sur le(s) style(s) choisi(s).</p>
     </div>
   </div>
@@ -1780,78 +1803,149 @@
   profileClose.addEventListener('click', closeProfile);
   profileOverlay.addEventListener('click', (e) => { if(e.target === profileOverlay) closeProfile(); });
 
-  /* ---------- ESPACE CLIENT (connexion / création) ---------- */
+  /* ---------- ESPACE CLIENT (vrai compte : connexion / création via API + base de données) ---------- */
   const accountNavBtn = document.getElementById('accountNavBtn');
   const accountOverlay = document.getElementById('accountOverlay');
   const accountModalTitle = document.getElementById('accountModalTitle');
   const accountModalSub = document.getElementById('accountModalSub');
-  const accountFormView = document.getElementById('accountFormView');
+  const accountError = document.getElementById('accountError');
+  const accountTabLogin = document.getElementById('accountTabLogin');
+  const accountTabSignup = document.getElementById('accountTabSignup');
+  const accountLoginView = document.getElementById('accountLoginView');
+  const accountSignupView = document.getElementById('accountSignupView');
   const accountWelcomeView = document.getElementById('accountWelcomeView');
-  const accountNameInput = document.getElementById('accountNameInput');
-  const accountPhoneInput = document.getElementById('accountPhoneInput');
-  const accountSaveBtn = document.getElementById('accountSaveBtn');
+  const accountEditView = document.getElementById('accountEditView');
+
+  const loginEmailInput = document.getElementById('loginEmailInput');
+  const loginPasswordInput = document.getElementById('loginPasswordInput');
+  const accountLoginBtn = document.getElementById('accountLoginBtn');
   const accountCancelBtn = document.getElementById('accountCancelBtn');
+
+  const signupNameInput = document.getElementById('signupNameInput');
+  const signupEmailInput = document.getElementById('signupEmailInput');
+  const signupPhoneInput = document.getElementById('signupPhoneInput');
+  const signupPasswordInput = document.getElementById('signupPasswordInput');
+  const accountSignupBtn = document.getElementById('accountSignupBtn');
+  const accountCancelBtn2 = document.getElementById('accountCancelBtn2');
+
   const accountWelcomeText = document.getElementById('accountWelcomeText');
   const accountEditBtn = document.getElementById('accountEditBtn');
   const accountLogoutBtn = document.getElementById('accountLogoutBtn');
   const accountCloseBtn = document.getElementById('accountCloseBtn');
 
-  function getClientProfile(){
-    try{ return JSON.parse(localStorage.getItem('cd_client_profile')); }
+  const editNameInput = document.getElementById('editNameInput');
+  const editPhoneInput = document.getElementById('editPhoneInput');
+  const accountEditSaveBtn = document.getElementById('accountEditSaveBtn');
+  const accountEditCancelBtn = document.getElementById('accountEditCancelBtn');
+
+  function getSession(){
+    try{ return JSON.parse(localStorage.getItem('cd_session')); }
     catch(e){ return null; }
   }
-  function saveClientProfile(name, phone){
-    localStorage.setItem('cd_client_profile', JSON.stringify({ name, phone }));
+  function saveSession(token, user){
+    localStorage.setItem('cd_session', JSON.stringify({ token, name: user.name, phone: user.phone, email: user.email }));
     updateAccountNavLabel();
   }
-  function clearClientProfile(){
-    localStorage.removeItem('cd_client_profile');
+  function clearSession(){
+    localStorage.removeItem('cd_session');
     updateAccountNavLabel();
+  }
+  // Compatibilité avec le reste du site (message WhatsApp du panier, etc.)
+  function getClientProfile(){
+    const s = getSession();
+    return s ? { name: s.name, phone: s.phone } : null;
   }
   function updateAccountNavLabel(){
-    const p = getClientProfile();
-    accountNavBtn.textContent = p ? `👋 ${p.name.split(' ')[0]}` : '👤 Mon compte';
+    const s = getSession();
+    accountNavBtn.textContent = s ? `👋 ${s.name.split(' ')[0]}` : '👤 Mon compte';
   }
   updateAccountNavLabel();
 
-  function showAccountForm(editing){
-    const p = getClientProfile();
-    accountModalTitle.textContent = editing ? 'Modifier mon profil' : 'Créer mon profil';
-    accountModalSub.textContent = "Enregistre tes infos une fois, elles seront prêtes pour tes prochaines commandes sur ce téléphone.";
-    accountNameInput.value = editing && p ? p.name : '';
-    accountPhoneInput.value = editing && p ? p.phone : '';
-    accountSaveBtn.textContent = editing ? 'Enregistrer' : 'Créer mon profil';
-    accountFormView.style.display = 'block';
+  function hideAllAccountViews(){
+    accountLoginView.style.display = 'none';
+    accountSignupView.style.display = 'none';
     accountWelcomeView.style.display = 'none';
+    accountEditView.style.display = 'none';
+    accountTabLogin.style.display = 'none';
+    accountTabSignup.style.display = 'none';
+    accountError.style.display = 'none';
+  }
+
+  function showLoginView(){
+    hideAllAccountViews();
+    accountModalTitle.textContent = 'Mon compte';
+    accountModalSub.textContent = "Connecte-toi, ou crée ton compte si c'est ta première visite.";
+    accountTabLogin.style.display = '';
+    accountTabSignup.style.display = '';
+    accountTabLogin.style.background = 'var(--text)';
+    accountTabLogin.style.color = 'var(--bg)';
+    accountTabSignup.style.background = 'none';
+    accountTabSignup.style.color = 'var(--text)';
+    accountLoginView.style.display = 'block';
+    loginPasswordInput.value = '';
+  }
+  function showSignupView(){
+    hideAllAccountViews();
+    accountModalTitle.textContent = 'Mon compte';
+    accountModalSub.textContent = "Connecte-toi, ou crée ton compte si c'est ta première visite.";
+    accountTabLogin.style.display = '';
+    accountTabSignup.style.display = '';
+    accountTabSignup.style.background = 'var(--text)';
+    accountTabSignup.style.color = 'var(--bg)';
+    accountTabLogin.style.background = 'none';
+    accountTabLogin.style.color = 'var(--text)';
+    accountSignupView.style.display = 'block';
+    signupPasswordInput.value = '';
   }
   function showAccountWelcome(){
-    const p = getClientProfile();
+    const s = getSession();
+    hideAllAccountViews();
     accountModalTitle.textContent = 'Mon compte';
     accountModalSub.textContent = '';
-    accountWelcomeText.innerHTML = `Content de te revoir, <b>${p.name}</b> 👋<br>WhatsApp : ${p.phone}<br><br>Tes infos seront ajoutées automatiquement quand tu enverras une sélection d'affiches.`;
-    accountFormView.style.display = 'none';
+    accountWelcomeText.innerHTML = `Content de te revoir, <b>${s.name}</b> 👋<br>Email : ${s.email}<br>WhatsApp : ${s.phone || '—'}`;
     accountWelcomeView.style.display = 'block';
+  }
+  function showEditView(){
+    const s = getSession();
+    hideAllAccountViews();
+    accountModalTitle.textContent = 'Modifier mes infos';
+    accountModalSub.textContent = '';
+    editNameInput.value = s.name || '';
+    editPhoneInput.value = s.phone || '';
+    accountEditView.style.display = 'block';
   }
 
   function openAccountModal(){
-    const p = getClientProfile();
-    if(p){ showAccountWelcome(); } else { showAccountForm(false); }
+    const s = getSession();
+    if(s){ showAccountWelcome(); } else { showLoginView(); }
     accountOverlay.classList.add('open');
   }
   function closeAccountModal(){
-    if(accountForced) return; // on ne peut pas fermer tant que le compte n'est pas créé
+    if(accountForced) return; // on ne peut pas fermer tant qu'on n'est pas connecté
     accountOverlay.classList.remove('open');
+  }
+
+  function showAccountError(msg){
+    accountError.textContent = msg;
+    accountError.style.display = 'block';
   }
 
   let accountForced = false;
   function maybeForceAccountCreation(){
-    if(!getClientProfile()){
+    if(!getSession()){
       accountForced = true;
-      showAccountForm(false);
-      accountModalSub.textContent = "Bienvenue ! Crée ton profil pour découvrir le site et commander tes affiches.";
+      showLoginView();
+      accountModalSub.textContent = "Bienvenue ! Connecte-toi, ou crée ton compte si c'est ta première visite.";
       accountCancelBtn.style.display = 'none';
+      accountCancelBtn2.style.display = 'none';
       accountOverlay.classList.add('open');
     }
+  }
+  function releaseForcedAccount(){
+    accountForced = false;
+    accountCancelBtn.style.display = '';
+    accountCancelBtn2.style.display = '';
+    accountOverlay.classList.remove('open');
   }
 
   accountNavBtn.addEventListener('click', () => {
@@ -1860,37 +1954,129 @@
     openAccountModal();
   });
   accountCancelBtn.addEventListener('click', closeAccountModal);
+  accountCancelBtn2.addEventListener('click', closeAccountModal);
   accountCloseBtn.addEventListener('click', closeAccountModal);
   accountOverlay.addEventListener('click', (e) => { if(e.target === accountOverlay) closeAccountModal(); });
 
-  accountSaveBtn.addEventListener('click', () => {
-    const name = accountNameInput.value.trim();
-    const phone = accountPhoneInput.value.trim();
-    if(!name || phone.replace(/\D/g,'').length < 8){
-      alert('Merci de renseigner ton nom et un numéro WhatsApp valide.');
+  accountTabLogin.addEventListener('click', showLoginView);
+  accountTabSignup.addEventListener('click', showSignupView);
+
+  function setBtnLoading(btn, loading, label){
+    btn.disabled = loading;
+    btn.textContent = loading ? 'Chargement…' : label;
+  }
+
+  accountLoginBtn.addEventListener('click', async () => {
+    const email = loginEmailInput.value.trim();
+    const password = loginPasswordInput.value;
+    accountError.style.display = 'none';
+    if(!email || !password){
+      showAccountError('Renseigne ton email et ton mot de passe.');
       return;
     }
-    const isNewAccount = !getClientProfile();
-    saveClientProfile(name, phone);
-    renderCart();
-    if(isNewAccount){
-      sendWhatsAppNotification(`🆕 Nouveau compte créé sur ton site !\nNom : ${name}\nWhatsApp : ${phone}`);
-    }
-    if(accountForced){
-      accountForced = false;
-      accountCancelBtn.style.display = '';
-      accountOverlay.classList.remove('open');
-    } else {
-      showAccountWelcome();
+    setBtnLoading(accountLoginBtn, true, 'Se connecter');
+    try{
+      const resp = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+      const data = await resp.json();
+      if(data.ok){
+        saveSession(data.token, data.user);
+        renderCart();
+        if(accountForced){ releaseForcedAccount(); }
+        else { showAccountWelcome(); }
+      } else {
+        showAccountError(data.error || 'Connexion impossible.');
+      }
+    }catch(err){
+      showAccountError("Impossible de contacter le serveur. Réessaie dans un instant.");
+    }finally{
+      setBtnLoading(accountLoginBtn, false, 'Se connecter');
     }
   });
 
-  accountEditBtn.addEventListener('click', () => showAccountForm(true));
+  accountSignupBtn.addEventListener('click', async () => {
+    const name = signupNameInput.value.trim();
+    const email = signupEmailInput.value.trim();
+    const phone = signupPhoneInput.value.trim();
+    const password = signupPasswordInput.value;
+    accountError.style.display = 'none';
+    if(!name || !email || !password){
+      showAccountError('Nom, email et mot de passe sont obligatoires.');
+      return;
+    }
+    if(password.length < 6){
+      showAccountError('Le mot de passe doit faire au moins 6 caractères.');
+      return;
+    }
+    setBtnLoading(accountSignupBtn, true, 'Créer mon compte');
+    try{
+      const resp = await fetch('/api/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, phone, password })
+      });
+      const data = await resp.json();
+      if(data.ok){
+        saveSession(data.token, data.user);
+        renderCart();
+        sendWhatsAppNotification(`🆕 Nouveau compte créé sur ton site !\nNom : ${name}\nEmail : ${email}\nWhatsApp : ${phone || '—'}`);
+        if(accountForced){ releaseForcedAccount(); }
+        else { showAccountWelcome(); }
+      } else {
+        showAccountError(data.error || 'Création du compte impossible.');
+        if(resp.status === 409){
+          loginEmailInput.value = email;
+          setTimeout(showLoginView, 1400);
+        }
+      }
+    }catch(err){
+      showAccountError("Impossible de contacter le serveur. Réessaie dans un instant.");
+    }finally{
+      setBtnLoading(accountSignupBtn, false, 'Créer mon compte');
+    }
+  });
+
+  accountEditBtn.addEventListener('click', showEditView);
+  accountEditCancelBtn.addEventListener('click', showAccountWelcome);
+
+  accountEditSaveBtn.addEventListener('click', async () => {
+    const s = getSession();
+    const name = editNameInput.value.trim();
+    const phone = editPhoneInput.value.trim();
+    if(!name){
+      alert('Le nom est obligatoire.');
+      return;
+    }
+    setBtnLoading(accountEditSaveBtn, true, 'Enregistrer');
+    try{
+      const resp = await fetch('/api/update-profile', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token: s.token, name, phone })
+      });
+      const data = await resp.json();
+      if(data.ok){
+        saveSession(s.token, data.user);
+        renderCart();
+        showAccountWelcome();
+      } else {
+        alert(data.error || 'Modification impossible.');
+      }
+    }catch(err){
+      alert("Impossible de contacter le serveur. Réessaie dans un instant.");
+    }finally{
+      setBtnLoading(accountEditSaveBtn, false, 'Enregistrer');
+    }
+  });
+
   accountLogoutBtn.addEventListener('click', () => {
-    if(confirm('Supprimer ton profil de ce téléphone ?')){
-      clearClientProfile();
-      showAccountForm(false);
+    if(confirm('Te déconnecter de ce compte sur cet appareil ?')){
+      clearSession();
       renderCart();
+      showLoginView();
     }
   });
 

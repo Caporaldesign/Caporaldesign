@@ -1,0 +1,2970 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light"><head>
+<meta charset="UTF-8">
+<meta name="viewport" id="viewportMeta" content="width=device-width, initial-scale=1.0">
+<title>Caporal Design — Affiches, Flyers &amp; Logos</title>
+<meta name="description" content="Caporal Design — création d'affiches, flyers, logos et visuels pour vos événements et votre business. Livraison rapide, prix bas.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f1f5c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Caporal Design">
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js').catch(() => {});
+    });
+  }
+</script>
+
+<script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.fr.nlcSf1XiR_U.O/m=gapi_iframes/rt=j/sv=1/d=1/ed=1/rs=AHpOoo9DDegfHzV0ObBsXUYCy3nKOBYL1Q/cb=gapi.loaded_0?le=scs" async=""></script><script>
+  (function(){
+    try{
+      var t = localStorage.getItem('cd_theme');
+      if(t === 'dark'){ document.documentElement.setAttribute('data-theme', 'dark'); }
+    }catch(e){}
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#faf9f6;
+    --paper:#ffffff;
+    --ink:#14140f;
+    --ink-soft:#514f45;
+    --text:#14140f;
+    --header-bg: rgba(250,249,246,0.9);
+    --green:#1aad5c;
+    --green-deep:#0f7a40;
+    --coral:#ff5a36;
+    --blue:#2f5af5;
+    --line:#e6e2d6;
+    --tape: rgba(255,214,10,0.55);
+    --radius: 14px;
+    --maxw: 1180px;
+  }
+  html[data-theme="dark"]{
+    --bg:#15150f;
+    --paper:#1e1e16;
+    --ink-soft:#b7b4a5;
+    --text:#f4f2e9;
+    --header-bg: rgba(21,21,15,0.88);
+    --line:#3a3829;
+    --tape: rgba(255,214,10,0.35);
+  }
+  html[data-theme="dark"] .poster-card::before{opacity:0.5;}
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    transition:background .25s ease, color .25s ease;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  h1,h2,h3{font-family:'Montserrat',sans-serif; font-weight:800; letter-spacing:-0.3px; line-height:1.05;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:2px;
+    color:var(--green-deep);
+  }
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--header-bg);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+    transition:background .25s ease;
+  }
+  nav{
+    max-width:var(--maxw); margin:0 auto; padding:16px 24px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{
+    font-family:'Montserrat',sans-serif; font-weight:800; font-size:22px; letter-spacing:-0.2px;
+    display:flex; align-items:center; gap:8px;
+  }
+  .logo span{color:var(--green);}
+  .refresh-btn{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:32px; height:32px; border-radius:50%;
+    border:1px solid var(--line); background:transparent;
+    color:var(--ink-soft); font-size:16px; cursor:pointer;
+    transition:transform .3s ease, color .2s, border-color .2s;
+    margin-left:4px;
+  }
+  .refresh-btn:hover{color:var(--green); border-color:var(--green);}
+  .refresh-btn:active{transform:rotate(180deg);}
+  .refresh-btn.spinning{animation:refreshSpin .6s linear;}
+  @keyframes refreshSpin{ to{ transform:rotate(360deg); } }
+  .search-strip{
+    background:var(--header-bg,#fff); border-bottom:1px solid var(--line);
+  }
+  .search-strip .wrap{
+    max-width:var(--maxw); margin:0 auto; padding:10px 24px;
+  }
+  .search-box{
+    display:flex; align-items:center; gap:10px;
+    border:1.5px solid var(--line); border-radius:999px;
+    padding:9px 16px; max-width:420px; margin:0 auto;
+    background:var(--bg-soft, transparent);
+    transition:border-color .2s;
+  }
+  .search-box:focus-within{border-color:var(--green);}
+  .search-box svg{flex-shrink:0; opacity:.6;}
+  #siteSearchInput{
+    border:none; outline:none; background:transparent; flex:1;
+    font-size:14px; font-family:inherit; color:var(--text);
+  }
+  #siteSearchClear{
+    border:none; background:none; cursor:pointer; font-size:16px;
+    color:var(--ink-soft); display:none; padding:0; line-height:1;
+  }
+  #siteSearchClear.show{display:block;}
+  .search-no-results{
+    text-align:center; padding:32px 16px; color:var(--ink-soft);
+    display:none; font-size:14px;
+  }
+  .search-no-results.show{display:block;}
+  .nav-links{display:flex; gap:28px; align-items:center; font-size:15px; font-weight:600;}
+  .nav-links a{text-decoration:none; color:var(--ink-soft); transition:color .2s;}
+  .nav-links a:hover{color:var(--text);}
+  .account-nav-btn{
+    background:none; border:none; cursor:pointer; font:inherit;
+    color:var(--ink-soft); transition:color .2s; padding:0;
+  }
+  .account-nav-btn:hover{color:var(--text);}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:12px 20px; border-radius:999px;
+    font-weight:700; font-size:14px; text-decoration:none;
+    border:2px solid transparent; cursor:pointer;
+    transition:transform .12s ease, box-shadow .12s ease;
+    transform:translateY(0);
+  }
+  .btn:hover{transform:translateY(-3px);}
+  .btn:active{transform:translateY(2px);}
+  .btn:focus-visible{outline:3px solid var(--blue); outline-offset:2px;}
+  .btn-coral{background:linear-gradient(180deg, #ff7a58, var(--coral)); color:#fff; box-shadow:0 7px 0 #b83c1f, 0 10px 16px rgba(184,60,31,0.35);}
+  .btn-coral:hover{box-shadow:0 5px 0 #b83c1f, 0 8px 14px rgba(184,60,31,0.35);}
+  .btn-coral:active{box-shadow:0 2px 0 #b83c1f;}
+  .btn-ink{background:linear-gradient(180deg, #3a3a30, var(--ink)); color:#fff; box-shadow:0 7px 0 #000000, 0 10px 16px rgba(0,0,0,0.3);}
+  .btn-ink:hover{box-shadow:0 5px 0 #000000, 0 8px 14px rgba(0,0,0,0.3);}
+  .btn-ink:active{box-shadow:0 2px 0 #000000;}
+  .btn-outline{background:linear-gradient(180deg, #ffffff, #f1efe6); color:var(--text); border-color:var(--text); box-shadow:0 7px 0 var(--text), 0 10px 16px rgba(20,20,15,0.2);}
+  .btn-outline:hover{box-shadow:0 5px 0 var(--text), 0 8px 14px rgba(20,20,15,0.2);}
+  .btn-outline:active{box-shadow:0 2px 0 var(--text);}
+  .hero .btn-outline{background:linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.08)); box-shadow:0 7px 0 rgba(255,255,255,0.6), 0 10px 16px rgba(0,0,0,0.2);}
+  .hero .btn-outline:hover{box-shadow:0 5px 0 rgba(255,255,255,0.6), 0 8px 14px rgba(0,0,0,0.2);}
+  .hero .btn-outline:active{box-shadow:0 2px 0 rgba(255,255,255,0.6);}
+  .menu-toggle{display:none; background:none; border:none; font-size:26px; cursor:pointer;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:72px 0 56px;
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(120deg, #1aad5c, #2f5af5, #ff5a36, #0f7a40);
+    background-size:400% 400%;
+    animation:splashBgMove 12s ease infinite;
+  }
+  .hero .hero-tag{color:#fff2b8;}
+  .hero h1{color:#ffffff;}
+  .hero h1 em{color:#fff2b8;}
+  .hero p.lead{color:rgba(255,255,255,0.9);}
+  .hero-stats b{color:#ffffff;}
+  .hero-stats span{color:rgba(255,255,255,0.8);}
+  .hero .btn-outline{color:#ffffff; border-color:#ffffff;}
+  .hero .wrap{display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:center;}
+  .hero-tag{
+    font-family:'Inter',sans-serif; font-size:13px; letter-spacing:2px;
+    text-transform:uppercase; color:var(--coral); font-weight:700;
+    display:inline-block; margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(40px, 6vw, 74px);
+    margin:0 0 20px;
+  }
+  .hero h1 em{
+    font-style:normal; color:var(--green);
+  }
+  .hero p.lead{
+    font-size:18px; color:var(--ink-soft); max-width:46ch; margin:0 0 28px;
+  }
+  .hero-ctas{display:flex; gap:14px; flex-wrap:wrap;}
+  .hero-stats{
+    display:flex; gap:28px; margin-top:36px; flex-wrap:wrap;
+  }
+  .hero-stats div{font-family:'Inter',sans-serif;}
+  .hero-stats b{display:block; font-size:26px; font-family:'Montserrat',sans-serif; font-weight:800;}
+  .hero-stats span{font-size:12px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:1px;}
+
+  .hero-visual{position:relative; height:440px;}
+
+  /* ---------- INFOGRAPHIE ANIMÉE (hero) ---------- */
+  .infographic{
+    position:relative; width:100%; height:100%;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .info-orbit{
+    position:absolute; top:50%; left:50%; width:400px; height:400px;
+    transform:translate(-50%,-50%);
+    max-width:100%; max-height:100%;
+  }
+  .orbit-ring{
+    fill:none; stroke:var(--line); stroke-width:1.5; stroke-dasharray:4 7;
+    transform-origin:200px 200px;
+  }
+  .orbit-ring-1{ animation:spin 26s linear infinite; }
+  .orbit-ring-2{ animation:spin 18s linear infinite reverse; stroke:rgba(47,90,245,0.35); }
+  @keyframes spin{ from{transform:rotate(0deg);} to{transform:rotate(360deg);} }
+
+  .info-core{
+    position:relative; z-index:3;
+    width:132px; height:132px; border-radius:50%;
+    background:var(--paper); border:2px solid var(--green);
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    box-shadow:0 14px 30px rgba(20,20,15,0.16);
+    animation:corePulse 3.2s ease-in-out infinite;
+  }
+  .info-core-logo{
+    font-family:'Montserrat',sans-serif; font-weight:800; font-size:22px; color:var(--ink);
+  }
+  .info-core-logo span{ color:var(--green); }
+  .info-core-sub{
+    font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--ink-soft); margin-top:4px;
+  }
+  @keyframes corePulse{
+    0%, 100%{ box-shadow:0 14px 30px rgba(20,20,15,0.16); }
+    50%{ box-shadow:0 14px 34px rgba(26,173,92,0.35); }
+  }
+
+  .info-node{
+    position:absolute; display:flex; flex-direction:column; align-items:center; gap:4px;
+    width:104px; padding:12px 10px; border-radius:14px;
+    background:var(--paper); border:1px solid var(--line);
+    box-shadow:0 10px 20px rgba(20,20,15,0.12);
+    opacity:0; transform:translateY(14px) scale(0.9);
+    animation:nodeIn 0.6s ease forwards, floaty 4.5s ease-in-out infinite;
+  }
+  .info-node-icon{ font-size:26px; line-height:1; }
+  .info-node-label{
+    font-family:'Inter',sans-serif; font-weight:700; font-size:12px; color:var(--ink); text-align:center;
+  }
+  @keyframes nodeIn{ to{ opacity:1; transform:translateY(0) scale(1); } }
+  @keyframes floaty{
+    0%, 100%{ transform:translateY(0); }
+    50%{ transform:translateY(-8px); }
+  }
+
+  .node-1{ top:6%; left:6%;  animation-delay:0.15s, 0.9s; }
+  .node-2{ top:6%; right:4%; animation-delay:0.5s, 1.3s; }
+  .node-3{ bottom:8%; left:2%; animation-delay:0.85s, 1.7s; }
+  .node-4{ bottom:8%; right:0%; animation-delay:1.2s, 2.1s; }
+
+  @media (prefers-reduced-motion: reduce){
+    .orbit-ring, .info-core, .info-node{ animation:none !important; opacity:1; transform:none; }
+  }
+
+  /* ---------- SECTION shells ---------- */
+  section{padding:80px 0;}
+  .section-head{max-width:640px; margin-bottom:44px;}
+  .section-head h2{font-size:clamp(30px,4vw,46px); margin:10px 0 14px;}
+  .section-head p{color:var(--ink-soft); font-size:16px; margin:0;}
+
+  /* ---------- GALLERY / MUR D'AFFICHES ---------- */
+  .gallery-section{background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .filters{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:40px;}
+  .chip{
+    font-family:'Inter',sans-serif; font-size:13px; padding:9px 16px;
+    border-radius:999px; border:2px solid var(--text); background:transparent;
+    cursor:pointer; font-weight:700; transition:all .15s ease;
+  }
+  .chip.active, .chip:hover{background:var(--text); color:var(--bg);}
+  .wall{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(150px,1fr));
+    gap:20px 14px;
+  }
+  .poster-card{
+    position:relative; background:#fff; padding:8px 8px 12px; border-radius:4px;
+    border:3px solid #d4af37;
+    box-shadow:0 8px 18px rgba(20,20,15,0.14), 0 0 0 1px rgba(212,175,55,0.35);
+    transition:transform .25s ease, box-shadow .25s ease;
+    cursor:default;
+  }
+  .poster-card:nth-child(3n+1){transform:rotate(-2.2deg);}
+  .poster-card:nth-child(3n+2){transform:rotate(1.6deg);}
+  .poster-card:nth-child(3n){transform:rotate(-1deg);}
+  .poster-card:hover{transform:rotate(0deg) scale(1.035); box-shadow:0 22px 34px rgba(20,20,15,0.22), 0 0 0 2px #d4af37; z-index:5;}
+  .poster-card::before{
+    content:''; position:absolute; top:-8px; left:50%; transform:translateX(-50%) rotate(-4deg);
+    width:44px; height:16px; background:var(--tape);
+  }
+  .poster-card img{border-radius:2px; width:100%; display:block; cursor:zoom-in;}
+  .poster-ref-badge{
+    position:absolute; top:6px; left:6px; z-index:4;
+    background:var(--ink); color:#fff; font-family:'Inter',sans-serif;
+    font-weight:800; font-size:11px; letter-spacing:0.3px;
+    padding:3px 8px; border-radius:999px; box-shadow:0 2px 6px rgba(0,0,0,0.25);
+    pointer-events:none;
+  }
+
+  /* ---------- LIGHTBOX (affiche en grand) ---------- */
+  #lightboxOverlay{
+    position:fixed; inset:0; background:rgba(10,10,8,0.92); z-index:150;
+    display:none; align-items:center; justify-content:center; padding:24px;
+    flex-direction:column;
+  }
+  #lightboxOverlay.open{display:flex;}
+  #lightboxClose{
+    position:absolute; top:18px; right:18px; width:42px; height:42px; border-radius:50%;
+    background:rgba(255,255,255,0.12); border:none; color:#fff; font-size:22px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+  }
+  #lightboxClose:hover{background:rgba(255,255,255,0.22);}
+  #lightboxImg{
+    max-width:100%; max-height:78vh; border-radius:8px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.5); object-fit:contain;
+  }
+  #lightboxCaption{
+    color:#fff; text-align:center; margin-top:16px; font-size:14px;
+  }
+  #lightboxCaption .lb-name{font-weight:700; display:block; margin-bottom:4px;}
+  #lightboxCaption .lb-tag{
+    font-family:'Inter',sans-serif; font-size:11px; text-transform:uppercase;
+    color:rgba(255,255,255,0.6); letter-spacing:0.5px;
+  }
+  .poster-meta{padding:8px 2px 0; display:flex; justify-content:space-between; align-items:baseline; gap:6px;}
+  .poster-meta .name{font-weight:700; font-size:12.5px;}
+  .poster-meta .tag{font-family:'Inter',sans-serif; font-size:9px; text-transform:uppercase; color:var(--ink-soft); letter-spacing:0.5px; white-space:nowrap;}
+  .hidden{display:none !important;}
+
+  @media (max-width: 480px){
+    .wall{ grid-template-columns:repeat(2, 1fr); gap:14px 10px; }
+    .poster-meta .name{font-size:11.5px;}
+  }
+
+  /* ---------- PROCESS ---------- */
+  .process-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:24px;}
+  .process-step{border:1px solid var(--line); border-radius:var(--radius); padding:26px 20px; background:var(--paper);}
+  .process-step .num{font-family:'Montserrat',sans-serif; font-weight:800; font-size:34px; color:var(--green); display:block; margin-bottom:10px;}
+  .process-step h3{font-family:'Inter',sans-serif; font-weight:800; font-size:17px; margin:0 0 8px;}
+  .process-step p{font-size:14px; color:var(--ink-soft); margin:0; line-height:1.5;}
+
+  /* ---------- PRICING / COMMANDER ---------- */
+  .order-section{background:var(--ink); color:#fff;}
+  .order-section .eyebrow{color:var(--coral);}
+  .order-section .section-head p{color:#cfcdc3;}
+  .pricing-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-bottom:50px;}
+  .price-card{
+    background:#1e1e17; border:1px solid #34342a; border-radius:var(--radius);
+    padding:30px 26px; position:relative;
+  }
+  .price-card.featured{border-color:var(--green); box-shadow:0 0 0 1px var(--green);}
+  .price-card .badge{
+    position:absolute; top:-13px; right:20px; background:var(--green); color:#0f2015;
+    font-family:'Inter',sans-serif; font-size:11px; font-weight:700; padding:5px 10px; border-radius:999px;
+  }
+  .price-card h3{font-family:'Inter',sans-serif; font-size:19px; font-weight:800; margin:0 0 6px;}
+  .price-card .price{font-family:'Montserrat',sans-serif; font-weight:800; font-size:34px; color:var(--green); margin:10px 0;}
+  .price-card .price small{font-family:'Inter',sans-serif; font-size:13px; color:#9c9a90; font-weight:500;}
+  .price-card ul{list-style:none; margin:0 0 24px; padding:0; font-size:14px; color:#d8d6cc; line-height:2;}
+  .price-card ul li::before{content:'✓ '; color:var(--green); font-weight:700;}
+
+  .pay-panel{
+    display:flex; gap:26px; flex-wrap:wrap; align-items:center; justify-content:space-between;
+    background:#1e1e17; border:1px solid #34342a; border-radius:var(--radius);
+    padding:28px 30px;
+  }
+  .pay-methods{display:flex; gap:14px; flex-wrap:wrap;}
+  .pay-pill{
+    display:flex; align-items:center; gap:10px; background:#2a2a20; border-radius:999px;
+    padding:10px 18px; font-family:'Inter',sans-serif; font-size:13px; font-weight:700;
+  }
+  .pay-pill .dot{width:10px; height:10px; border-radius:50%;}
+  .dot-wave{background:#1DBFEF;}
+  .dot-om{background:#FF7900;}
+  .pay-note{font-size:13px; color:#9c9a90; max-width:34ch;}
+
+  /* ---------- CONTACT / FOOTER ---------- */
+  footer{padding:70px 0 34px; background:var(--bg);}
+  .contact-grid{
+    display:grid; grid-template-columns:1.1fr 0.9fr; gap:50px;
+    padding-bottom:50px; border-bottom:1px solid var(--line); margin-bottom:26px;
+  }
+  .contact-card{
+    background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:34px;
+  }
+  .contact-card h2{font-size:32px; margin:8px 0 14px;}
+  .contact-card p{color:var(--ink-soft); font-size:15px; margin:0 0 24px; max-width:40ch;}
+  .contact-list{display:flex; flex-direction:column; gap:14px;}
+  .contact-item{
+    display:flex; align-items:center; gap:12px; font-weight:700; font-size:15px;
+    text-decoration:none; padding:12px 16px; border:1px solid var(--line); border-radius:10px;
+    transition:border-color .15s ease, transform .15s ease;
+  }
+  .contact-item:hover{border-color:var(--text); transform:translateX(4px);}
+  .contact-item .ic{width:22px; text-align:center;}
+  .footer-note{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:13px; color:var(--ink-soft); font-family:'Inter',sans-serif;}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:860px){
+    .hero .wrap{grid-template-columns:1fr;}
+    .hero-visual{height:320px; margin-top:20px;}
+    .info-orbit{width:280px; height:280px;}
+    .info-core{width:100px; height:100px;}
+    .info-core-logo{font-size:17px;}
+    .info-node{width:84px; padding:8px 6px;}
+    .info-node-icon{font-size:20px;}
+    .info-node-label{font-size:10px;}
+    .process-grid{grid-template-columns:repeat(2,1fr);}
+    .pricing-grid{grid-template-columns:1fr;}
+    .contact-grid{grid-template-columns:1fr;}
+  }
+  @media (max-width:640px){
+    .nav-links{
+      position:fixed; top:64px; left:0; right:0; background:var(--bg);
+      flex-direction:column; align-items:flex-start; padding:20px 24px;
+      border-bottom:1px solid var(--line); display:none; gap:16px;
+    }
+    .nav-links.open{display:flex;}
+    .menu-toggle{display:block;}
+    .process-grid{grid-template-columns:1fr;}
+    section{padding:56px 0;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important; scroll-behavior:auto !important;}
+  }
+  /* ---------- SPLASH / WELCOME ---------- */
+  #splash{
+    position:fixed; inset:0; z-index:999;
+    background:linear-gradient(120deg, #1aad5c, #2f5af5, #ff5a36, #0f7a40);
+    background-size:400% 400%;
+    animation:splashBgMove 12s ease infinite;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:24px;
+    transition:opacity .6s ease, visibility .6s ease;
+  }
+  @keyframes splashBgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+  }
+  #splash.hide{opacity:0; visibility:hidden; pointer-events:none;}
+  #splash .splash-logo,
+  #splash .hero-tag,
+  #splash .splash-sub{color:#ffffff;}
+  #splash .splash-logo span{color:#fff2b8;}
+  #splash .splash-tag{color:#fff2b8;}
+  #splash .splash-loader{background:rgba(255,255,255,0.3);}
+  #splash .splash-loader-bar{background:#ffffff;}
+  #splash .splash-logo{
+    font-family:'Montserrat',sans-serif; font-weight:800; color:var(--ink); letter-spacing:-0.5px;
+    font-size:clamp(30px,7vw,54px); line-height:1.05; margin-bottom:14px;
+  }
+  #splash .splash-logo span{color:var(--green);}
+  #splash .splash-tag{
+    font-family:'Inter',sans-serif; text-transform:uppercase;
+    color:var(--coral); font-size:clamp(13px,2.4vw,16px); letter-spacing:3px;
+    margin-bottom:34px;
+  }
+  #splash .splash-sub{
+    color:var(--ink-soft); font-size:15px; max-width:40ch; margin:0 0 30px;
+  }
+  #splash .splash-loader{
+    width:120px; height:4px; border-radius:99px; background:rgba(20,20,15,0.12);
+    overflow:hidden; margin-bottom:26px;
+  }
+  #splash .splash-loader-bar{
+    width:0%; height:100%; background:var(--green);
+    animation:splashLoad 6.3s ease forwards;
+  }
+  @keyframes splashLoad{ to{ width:100%; } }
+  #splash .btn{cursor:pointer;}
+  body.splash-lock{overflow:hidden;}
+  /* ---------- SELECT BUTTON on posters ---------- */
+  .poster-card{overflow:hidden;}
+  .btn-select{
+    display:block; width:100%; margin-top:8px;
+    font-family:'Inter',sans-serif; font-size:10.5px; font-weight:700;
+    text-transform:uppercase; letter-spacing:0.3px;
+    padding:8px 6px; border-radius:7px; border:2px solid var(--text);
+    background:linear-gradient(180deg, #ffffff, #eeece2); color:var(--text); cursor:pointer;
+    box-shadow:0 4px 0 var(--text), 0 6px 10px rgba(20,20,15,0.18);
+    transition:all .12s ease; transform:translateY(0);
+  }
+  .btn-select:hover{background:linear-gradient(180deg, var(--text), #2a2a20); color:var(--bg); transform:translateY(-2px); box-shadow:0 6px 0 var(--text), 0 8px 12px rgba(20,20,15,0.22);}
+  .btn-select:active{transform:translateY(2px); box-shadow:0 1px 0 var(--text);}
+  .btn-select.selected{background:linear-gradient(180deg, #2fcf7a, var(--green)); border-color:var(--green-deep); color:#fff; box-shadow:0 4px 0 var(--green-deep), 0 6px 10px rgba(15,122,64,0.3);}
+
+  /* ---------- CART FAB + PANEL ---------- */
+  /* ---------- SETTINGS FAB + PANEL ---------- */
+  /* ---------- PROFIL FAB + PANEL ---------- */
+  /* ---------- ADMIN MODE ---------- */
+  #adminFab{
+    display:none;
+    position:fixed; right:20px; bottom:212px; z-index:80;
+    width:48px; height:48px; border-radius:50%;
+    background:linear-gradient(180deg, #ffffff, #f1efe6); color:var(--text); border:2px solid var(--line); cursor:pointer;
+    box-shadow:0 5px 0 var(--line), 0 8px 16px rgba(20,20,15,0.25);
+    font-size:19px; align-items:center; justify-content:center;
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  #adminFab:hover{transform:translateY(-2px);}
+  #adminFab:active{transform:translateY(3px); box-shadow:0 1px 0 var(--line);}
+  #adminFab{ display:flex; }
+  body.admin-mode #adminFab{background:linear-gradient(180deg, #2fcf7a, var(--green)); border-color:var(--green-deep); color:#fff; box-shadow:0 5px 0 var(--green-deep), 0 8px 16px rgba(15,122,64,0.35);}
+
+  #desktopModeFab{
+    display:flex;
+    position:fixed; right:20px; bottom:278px; z-index:85;
+    width:64px; height:64px; border-radius:50%;
+    background:linear-gradient(180deg, #4d78ff, var(--blue)); color:#fff; border:3px solid #ffffff; cursor:pointer;
+    box-shadow:0 6px 0 #1d3ea8, 0 10px 22px rgba(47,90,245,0.5);
+    font-size:28px; align-items:center; justify-content:center;
+    transition:transform .12s ease, box-shadow .12s ease;
+    animation:desktopFabPulse 2.4s ease-in-out infinite;
+  }
+  @keyframes desktopFabPulse{
+    0%, 100%{ box-shadow:0 6px 0 #1d3ea8, 0 10px 22px rgba(47,90,245,0.5), 0 0 0 0 rgba(47,90,245,0.5); }
+    50%{ box-shadow:0 6px 0 #1d3ea8, 0 10px 22px rgba(47,90,245,0.5), 0 0 0 10px rgba(47,90,245,0); }
+  }
+  #desktopModeFab:hover{transform:translateY(-2px);}
+  #desktopModeFab:active{transform:translateY(3px); box-shadow:0 1px 0 #1d3ea8;}
+  body.desktop-mode #desktopModeFab{background:linear-gradient(180deg, #ff9a58, var(--coral)); border-color:#ffffff; color:#fff; box-shadow:0 6px 0 #b83c1f, 0 10px 22px rgba(255,90,54,0.5);}
+  @media (min-width:1000px){ body:not(.desktop-mode) #desktopModeFab{display:none;} }
+
+  #accountOverlay{
+    position:fixed; inset:0; background:rgba(20,20,15,0.6); z-index:120;
+    display:none; align-items:center; justify-content:center; padding:20px;
+  }
+  #accountOverlay.open{display:flex;}
+
+  #adminLoginOverlay{
+    position:fixed; inset:0; background:rgba(20,20,15,0.6); z-index:120;
+    display:none; align-items:center; justify-content:center; padding:20px;
+  }
+  #adminLoginOverlay.open{display:flex;}
+  .admin-modal{
+    background:var(--paper); border-radius:16px; padding:28px 24px; width:min(340px,100%);
+    color:var(--text);
+  }
+  .admin-modal h3{margin:0 0 8px;}
+  .admin-modal p{font-size:13px; color:var(--ink-soft); margin:0 0 18px;}
+  .admin-modal input{
+    width:100%; padding:12px 14px; border-radius:10px; border:2px solid var(--line);
+    background:var(--bg); color:var(--text); font-family:'Inter',sans-serif; font-size:15px;
+    margin-bottom:12px; box-sizing:border-box;
+  }
+  .admin-modal .btn{width:100%; justify-content:center; margin-bottom:8px;}
+  .admin-modal .admin-error{color:var(--coral); font-size:12.5px; display:none; margin:-6px 0 12px;}
+  .admin-modal .admin-cancel{
+    width:100%; text-align:center; background:none; border:none; color:var(--ink-soft);
+    font-size:13px; cursor:pointer; padding:6px;
+  }
+  .pw-field{position:relative;}
+  .pw-field input{padding-right:44px !important;}
+  .pw-toggle{
+    position:absolute; right:6px; top:0;
+    height:44px; width:36px;
+    display:flex; align-items:center; justify-content:center;
+    background:none; border:none; cursor:pointer; font-size:17px;
+    color:var(--ink-soft); padding:0;
+  }
+  .pw-toggle:hover{color:var(--text);}
+
+  #adminBar{
+    position:fixed; left:50%; bottom:16px; transform:translateX(-50%); z-index:70;
+    display:none; align-items:center; gap:10px;
+    background:var(--ink); color:#fff; padding:10px 14px; border-radius:999px;
+    box-shadow:0 10px 24px rgba(0,0,0,0.3); font-size:12.5px;
+    max-width:94vw; overflow-x:auto; flex-wrap:nowrap;
+  }
+  body.admin-mode #adminBar{display:flex;}
+  #adminBar b{color:var(--green); white-space:nowrap;}
+  #adminBar button{
+    background:rgba(255,255,255,0.12); border:none; color:#fff; padding:7px 12px;
+    border-radius:999px; font-size:12px; cursor:pointer; font-weight:700;
+    white-space:nowrap; flex-shrink:0;
+  }
+  #adminBar button:hover{background:rgba(255,255,255,0.22);}
+
+  .poster-like-btn{
+    position:absolute; top:6px; left:6px; z-index:5;
+    width:28px; height:28px; border-radius:50%; border:none;
+    background:rgba(255,255,255,0.92); color:var(--ink);
+    font-size:15px; cursor:pointer; display:flex; align-items:center; justify-content:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.18); transition:transform .15s ease;
+  }
+  .poster-like-btn:hover{transform:scale(1.08);}
+  .poster-like-btn.liked{color:#ff3b5c;}
+  .poster-like-btn.pulse{animation:likePulse .3s ease;}
+  @keyframes likePulse{ 0%{transform:scale(1);} 40%{transform:scale(1.35);} 100%{transform:scale(1);} }
+
+  .poster-delete-btn{
+    display:none; position:absolute; top:6px; right:6px; z-index:5;
+    width:26px; height:26px; border-radius:50%; border:none;
+    background:var(--coral); color:#fff; font-size:13px; cursor:pointer;
+    align-items:center; justify-content:center;
+  }
+  body.admin-mode .poster-delete-btn{display:flex;}
+  .poster-card{position:relative;}
+
+  #addPosterCard{
+    display:none; flex-direction:column; align-items:center; justify-content:center;
+    gap:8px; border:2px dashed var(--line); border-radius:var(--radius);
+    min-height:220px; cursor:pointer; color:var(--ink-soft); text-align:center; padding:16px;
+    background:var(--paper);
+  }
+  body.admin-mode #addPosterCard{display:flex;}
+  #addPosterCard:hover{border-color:var(--green); color:var(--green-deep);}
+  #addPosterCard .plus{font-size:34px; line-height:1;}
+
+  #posterFormOverlay{
+    position:fixed; inset:0; background:rgba(20,20,15,0.6); z-index:120;
+    display:none; align-items:center; justify-content:center; padding:20px;
+  }
+  #posterFormOverlay.open{display:flex;}
+  #usersOverlay{
+    position:fixed; inset:0; background:rgba(20,20,15,0.6); z-index:120;
+    display:none; align-items:center; justify-content:center; padding:20px;
+  }
+  #usersOverlay.open{display:flex;}
+  .user-row{
+    padding:10px 0; border-bottom:1px solid var(--line); font-size:13.5px;
+  }
+  .user-row:last-child{border-bottom:none;}
+  .user-row .u-name{font-weight:700; display:block;}
+  .user-row .u-email{color:var(--green-deep); word-break:break-all;}
+  .user-row .u-phone{color:var(--ink-soft); display:block; font-size:12.5px; margin-top:2px;}
+  .admin-modal select{
+    width:100%; padding:12px 14px; border-radius:10px; border:2px solid var(--line);
+    background:var(--bg); color:var(--text); font-size:14px; margin-bottom:12px; box-sizing:border-box;
+  }
+  .admin-modal .preview-thumb{
+    width:100%; max-height:160px; object-fit:cover; border-radius:10px; margin-bottom:12px; display:none;
+  }
+
+  #profileFab{
+    position:fixed; right:20px; bottom:152px; z-index:80;
+    width:48px; height:48px; border-radius:50%;
+    background:var(--paper); color:var(--text); border:2px solid var(--line); cursor:pointer;
+    box-shadow:0 8px 18px rgba(20,20,15,0.18);
+    font-size:20px; display:flex; align-items:center; justify-content:center;
+    transition:transform .15s ease;
+  }
+  #profileFab:hover{transform:translateY(-3px);}
+  #profileOverlay{
+    position:fixed; inset:0; background:rgba(20,20,15,0.5); z-index:97;
+    opacity:0; visibility:hidden; transition:opacity .25s ease, visibility .25s ease;
+  }
+  #profileOverlay.open{opacity:1; visibility:visible;}
+  #profilePanel{
+    position:fixed; top:0; left:0; height:100%; width:min(420px,92vw); z-index:98;
+    background:var(--paper); box-shadow:14px 0 40px rgba(0,0,0,0.2);
+    transform:translateX(-100%); transition:transform .3s ease;
+    display:flex; flex-direction:column; color:var(--text);
+  }
+  #profileOverlay.open #profilePanel{transform:translateX(0);}
+  .profile-stats{display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:6px 0 4px;}
+  .profile-stat{
+    background:var(--bg); border:1px solid var(--line); border-radius:10px; padding:12px;
+    text-align:center;
+  }
+  .profile-stat .num{font-family:'Montserrat',sans-serif; font-weight:800; font-size:24px; display:block; color:var(--green-deep);}
+  .profile-stat .lbl{font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:var(--ink-soft);}
+  .profile-search{
+    width:100%; padding:10px 14px; border-radius:10px; border:2px solid var(--line);
+    background:var(--bg); color:var(--text); font-size:13px; margin:10px 0;
+  }
+  .profile-list{max-height:260px; overflow-y:auto; border:1px solid var(--line); border-radius:10px;}
+  .profile-list-item{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:9px 12px; border-bottom:1px solid var(--line); font-size:13px;
+  }
+  .profile-list-item:last-child{border-bottom:none;}
+  .profile-list-item .pl-tag{
+    font-family:'Inter',sans-serif; font-size:10.5px; text-transform:uppercase;
+    color:var(--ink-soft); background:var(--bg); padding:2px 8px; border-radius:99px; flex-shrink:0; margin-left:8px;
+  }
+  .profile-info-row{
+    display:flex; justify-content:space-between; align-items:center; font-size:13px;
+    padding:9px 0; border-bottom:1px solid var(--line);
+  }
+  .profile-info-row:last-child{border-bottom:none;}
+  .profile-info-row .pi-label{color:var(--ink-soft);}
+  .profile-info-row .pi-value{font-weight:700; text-align:right;}
+  .profile-dot{width:8px; height:8px; border-radius:50%; display:inline-block; margin-right:6px;}
+  .profile-dot.on{background:var(--green);}
+  .profile-dot.off{background:var(--coral);}
+
+  #settingsFab{
+    position:fixed; right:20px; bottom:92px; z-index:80;
+    width:48px; height:48px; border-radius:50%;
+    background:var(--paper); color:var(--text); border:2px solid var(--line); cursor:pointer;
+    box-shadow:0 8px 18px rgba(20,20,15,0.18);
+    font-size:20px; display:none; align-items:center; justify-content:center;
+    transition:transform .15s ease, background .25s ease;
+  }
+  body.admin-mode #settingsFab{ display:flex; }
+  #settingsFab:hover{transform:translateY(-3px) rotate(25deg);}
+  #settingsOverlay{
+    position:fixed; inset:0; background:rgba(20,20,15,0.5); z-index:95;
+    opacity:0; visibility:hidden; transition:opacity .25s ease, visibility .25s ease;
+  }
+  #settingsOverlay.open{opacity:1; visibility:visible;}
+  #settingsPanel{
+    position:fixed; top:0; left:0; height:100%; width:min(400px,92vw); z-index:96;
+    background:var(--paper); box-shadow:14px 0 40px rgba(0,0,0,0.2);
+    transform:translateX(-100%); transition:transform .3s ease;
+    display:flex; flex-direction:column; color:var(--text);
+  }
+  #settingsOverlay.open #settingsPanel{transform:translateX(0);}
+  .settings-body{flex:1; overflow-y:auto; padding:6px 22px 22px;}
+  .settings-group{padding:20px 0; border-bottom:1px solid var(--line);}
+  .settings-group:last-child{border-bottom:none;}
+  .settings-group h4{
+    font-family:'Inter',sans-serif; text-transform:uppercase; font-size:12px;
+    letter-spacing:1.5px; color:var(--green-deep); margin:0 0 14px;
+  }
+  .theme-switch{display:flex; gap:10px;}
+  .theme-switch button{
+    flex:1; padding:12px; border-radius:10px; border:2px solid var(--line);
+    background:transparent; color:var(--text); font-weight:700; font-size:14px; cursor:pointer;
+    transition:all .15s ease;
+  }
+  .theme-switch button.active{background:var(--text); color:var(--bg); border-color:var(--text);}
+  .settings-field label{display:block; font-size:13px; font-weight:600; margin-bottom:8px;}
+  .settings-field input{
+    width:100%; padding:12px 14px; border-radius:10px; border:2px solid var(--line);
+    background:var(--bg); color:var(--text); font-family:'Inter',sans-serif; font-size:14px;
+    margin-bottom:10px;
+  }
+  .settings-field .btn{width:100%; justify-content:center; padding:11px 16px; font-size:13px;}
+  .settings-hint{font-size:12.5px; color:var(--ink-soft); margin:0 0 12px;}
+  #settingsSavedMsg{
+    font-size:12.5px; color:var(--green-deep); font-weight:700; display:none; margin-top:4px;
+  }
+
+  #cartFab{
+    position:fixed; right:20px; bottom:20px; z-index:80;
+    width:60px; height:60px; border-radius:50%;
+    background:linear-gradient(180deg, #ff7a58, var(--coral)); color:#fff; border:none; cursor:pointer;
+    box-shadow:0 6px 0 #b83c1f, 0 10px 24px rgba(255,90,54,0.45);
+    font-size:24px; display:flex; align-items:center; justify-content:center;
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  #cartFab:hover{transform:translateY(-3px) scale(1.05); box-shadow:0 4px 0 #b83c1f, 0 12px 26px rgba(255,90,54,0.5);}
+  #cartFab:active{transform:translateY(2px) scale(1); box-shadow:0 1px 0 #b83c1f;}
+  #cartFab .cart-count{
+    position:absolute; top:-4px; right:-4px;
+    background:var(--ink); color:#fff; font-family:'Inter',sans-serif;
+    font-size:12px; font-weight:700; min-width:22px; height:22px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center; padding:0 4px;
+    border:2px solid var(--bg);
+  }
+  #cartOverlay{
+    position:fixed; inset:0; background:rgba(20,20,15,0.5); z-index:90;
+    opacity:0; visibility:hidden; transition:opacity .25s ease, visibility .25s ease;
+  }
+  #cartOverlay.open{opacity:1; visibility:visible;}
+  #cartPanel{
+    position:fixed; top:0; right:0; height:100%; width:min(400px,92vw); z-index:91;
+    background:var(--paper); box-shadow:-14px 0 40px rgba(0,0,0,0.2);
+    transform:translateX(100%); transition:transform .3s ease;
+    display:flex; flex-direction:column;
+  }
+  #cartOverlay.open #cartPanel{transform:translateX(0);}
+  .cart-head{
+    padding:22px 22px 16px; border-bottom:1px solid var(--line);
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .cart-head h3{font-size:22px; margin:0;}
+  .cart-close{background:none; border:none; font-size:24px; cursor:pointer; color:var(--ink-soft);}
+  .cart-items{flex:1; overflow-y:auto; padding:14px 22px;}
+  .cart-empty{color:var(--ink-soft); font-size:14px; padding:30px 0; text-align:center;}
+  .cart-item{
+    display:flex; align-items:center; gap:12px; padding:12px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .cart-item .ci-info{flex:1;}
+  .cart-item .ci-name{font-weight:700; font-size:14px; display:block;}
+  .cart-item .ci-tag{font-family:'Inter',sans-serif; font-size:11px; color:var(--ink-soft); text-transform:uppercase;}
+  .cart-item .ci-remove{
+    background:none; border:none; color:var(--coral); font-size:20px; cursor:pointer; line-height:1;
+  }
+  .ci-qty{display:flex; align-items:center; gap:8px; margin-top:6px;}
+  .ci-qty button{
+    width:24px; height:24px; border-radius:6px; border:1px solid var(--line);
+    background:var(--bg); color:var(--text); cursor:pointer; font-weight:700; font-size:14px;
+    display:flex; align-items:center; justify-content:center; padding:0; line-height:1;
+  }
+  .ci-qty span{font-family:'Inter',sans-serif; font-size:13px; min-width:16px; text-align:center;}
+  .cart-foot{padding:18px 22px 24px; border-top:1px solid var(--line);}
+  .cart-foot .btn{width:100%; justify-content:center;}
+  .cart-note{font-size:12.5px; color:var(--ink-soft); margin:10px 0 0;}
+
+  /* ---------- FOUNDER STRIP ---------- */
+  .founder-strip{
+    background:var(--paper); border-bottom:1px solid var(--line);
+  }
+  .founder-strip .wrap{
+    max-width:var(--maxw); margin:0 auto; padding:14px 24px;
+    display:flex; align-items:center; gap:14px;
+  }
+  .founder-photo{
+    width:96px; height:96px; border-radius:50%; overflow:hidden;
+    flex:none; border:3px solid var(--coral); box-shadow:0 3px 8px rgba(20,20,15,0.15);
+    cursor:zoom-in; transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .founder-photo:hover{transform:scale(1.04); box-shadow:0 6px 14px rgba(20,20,15,0.22);}
+  .founder-photo img{width:100%; height:100%; object-fit:cover; object-position:50% 35%; display:block;}
+  @media (max-width:640px){
+    .founder-photo{width:76px; height:76px;}
+  }
+  .founder-text{display:flex; flex-direction:column; line-height:1.25;}
+  .founder-text b{font-size:14.5px;}
+  .founder-text span{font-size:12.5px; color:var(--ink-soft);}
+</style>
+<script src="https://apis.google.com/js/api.js?onload=__iframefcb992280" type="text/javascript" charset="UTF-8" gapi_processed="true"></script></head>
+<body class="">
+
+<div id="splash">
+  <div class="hero-tag" style="color:var(--tape);">✂️ CAPORAL DESIGN</div>
+  <h1 class="splash-logo">BIENVENUE SUR<br><span>CAPORALDESIGN.COM</span></h1>
+  <p class="splash-tag">Affiches · Flyers · Logos</p>
+  <div class="splash-loader"><div class="splash-loader-bar"></div></div>
+  <p class="splash-sub">Ton studio créatif pour affiches, flyers et logos qui donnent envie de cliquer.</p>
+  <button class="btn btn-coral" id="splashEnter">Entrer sur le site →</button>
+</div>
+
+
+<header>
+  <nav>
+    <div class="logo">CAPORAL<span>.</span>DESIGN
+      <button type="button" class="refresh-btn" id="refreshBtn" title="Actualiser le site" aria-label="Actualiser le site">↻</button>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#galerie">Galerie</a>
+      <a href="#process">Comment ça marche</a>
+      <a href="#commander">Tarifs</a>
+      <a href="#contact">Contact</a>
+      <button type="button" id="accountNavBtn" class="account-nav-btn">👋 Anicetulrich225</button>
+      <a href="https://wa.me/2250747626380" class="btn btn-coral" target="_blank" rel="noopener">Commander →</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+  </nav>
+</header>
+
+<div class="search-strip">
+  <div class="wrap">
+    <div class="search-box">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="text" id="siteSearchInput" placeholder="Rechercher une affiche, un logo, un style...">
+      <button type="button" id="siteSearchClear" aria-label="Effacer la recherche">✕</button>
+    </div>
+  </div>
+</div>
+
+<div class="founder-strip">
+  <div class="wrap">
+    <div class="founder-photo" id="founderPhoto"><img src="poster1.jpg" alt="Fondateur de Caporal Design"></div>
+    <div class="founder-text">
+      <b>Fondé par CAPORAL DESIGN</b>
+      <span>Fondateur &amp; Directeur artistique — Caporal Design</span>
+    </div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="hero-tag">Studio graphique · Côte d'Ivoire</span>
+      <h1>Des affiches qui <em>arrêtent</em><br>le scroll.</h1>
+      <p class="lead">Caporal Design crée les affiches, flyers, logos et visuels qui font parler de ton événement, ta boutique ou ton service — livrés vite, sans te ruiner.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/2250747626380" class="btn btn-coral" target="_blank" rel="noopener">💬 Commander une affiche</a>
+        <a href="#galerie" class="btn btn-outline">Voir la galerie</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>13+</b><span>Affiches livrées</span></div>
+        <div><b>24h</b><span>Délai express</span></div>
+        <div><b>2</b><span>Moyens de paiement</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section" id="galerie">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Le mur d'affiches</span>
+      <h2>Nos dernières créations</h2>
+      <p>Un aperçu des affiches, flyers et visuels créés pour nos clients — soirées, immobilier, services et commerces.</p>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="chip active" data-filter="all">Tous (13)</button>
+      <button class="chip" data-filter="evenement">Soirées &amp; Événements (6)</button>
+      <button class="chip" data-filter="immobilier">Immobilier &amp; Agriculture (2)</button>
+      <button class="chip" data-filter="service">Services (4)</button>
+      <button class="chip" data-filter="commerce">Commerce (1)</button>
+    </div>
+
+    <div class="search-no-results" id="searchNoResults">Aucune affiche ne correspond à ta recherche 🔎</div>
+
+    <div id="lightboxOverlay">
+  <button id="lightboxClose" aria-label="Fermer">×</button>
+  <img id="lightboxImg" src="" alt="">
+  <div id="lightboxCaption">
+    <span class="lb-name" id="lightboxName"></span>
+    <span class="lb-tag" id="lightboxTag"></span>
+  </div>
+</div>
+
+<div class="wall" id="wall">
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster2.jpg" alt="Affiche présentation Sissoko">
+        <div class="poster-meta"><span class="name">Présentation — Sissoko</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p1" data-name="Présentation — Sissoko" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster3.jpg" alt="Affiche Soirée Karaoké Iliazio Grill">
+        <div class="poster-meta"><span class="name">Soirée Karaoké — Iliazio Grill</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p2" data-name="Soirée Karaoké — Iliazio Grill" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster4.jpg" alt="Affiche Soirée des Bienfaiteurs">
+        <div class="poster-meta"><span class="name">Soirée des Bienfaiteurs</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p3" data-name="Soirée des Bienfaiteurs" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster5.jpg" alt="Affiche Gohitafla en Couleurs">
+        <div class="poster-meta"><span class="name">Gohitafla en Couleurs</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p4" data-name="Gohitafla en Couleurs" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster6.jpg" alt="Affiche anniversaire Grand Papa — Rolex VIP">
+        <div class="poster-meta"><span class="name">Anniversaire Grand Papa</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p5" data-name="Anniversaire Grand Papa" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster7.jpg" alt="Affiche soirée Paiya — La Cave Beach">
+        <div class="poster-meta"><span class="name">Soirée Paiya — Cave Beach</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p6" data-name="Soirée Paiya — Cave Beach" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="immobilier"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster8.jpg" alt="Affiche Tano Bryan Immobilier">
+        <div class="poster-meta"><span class="name">TBI — Immobilier</span><span class="tag">Immobilier</span></div>
+        <button class="btn-select" type="button" data-id="p7" data-name="TBI — Immobilier" data-tag="Immobilier">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="immobilier"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster9.jpg" alt="Affiche Tano Bryan Sarl Agriculture">
+        <div class="poster-meta"><span class="name">TBI — Agriculture</span><span class="tag">Agriculture</span></div>
+        <button class="btn-select" type="button" data-id="p8" data-name="TBI — Agriculture" data-tag="Agriculture">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster10.jpg" alt="Affiche Roro Imprimerie">
+        <div class="poster-meta"><span class="name">Roro Imprimerie</span><span class="tag">Service</span></div>
+        <button class="btn-select" type="button" data-id="p9" data-name="Roro Imprimerie" data-tag="Service">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster11.jpg" alt="Affiche Bura Fatmagül Service">
+        <div class="poster-meta"><span class="name">Bura Fatmagül Service</span><span class="tag">Service</span></div>
+        <button class="btn-select" type="button" data-id="p10" data-name="Bura Fatmagül Service" data-tag="Service">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster12.jpg" alt="Affiche President Poutine Service">
+        <div class="poster-meta"><span class="name">President Poutine Service</span><span class="tag">Service</span></div>
+        <button class="btn-select" type="button" data-id="p11" data-name="President Poutine Service" data-tag="Service">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster13.jpg" alt="Affiche Caporal Xu Service">
+        <div class="poster-meta"><span class="name">Caporal Xu Service</span><span class="tag">Service</span></div>
+        <button class="btn-select" type="button" data-id="p12" data-name="Caporal Xu Service" data-tag="Service">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster14.jpg" alt="Affiche Cave Debout Adzopé">
+        <div class="poster-meta"><span class="name">Cave Debout Adzopé</span><span class="tag">Commerce</span></div>
+        <button class="btn-select" type="button" data-id="p13" data-name="Cave Debout Adzopé" data-tag="Commerce">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster15.jpg" alt="Formation Achat en Chine — Alibaba">
+        <div class="poster-meta"><span class="name">Formation Achat en Chine — Alibaba</span><span class="tag">Service</span></div>
+        <button class="btn-select" type="button" data-id="p14" data-name="Formation Achat en Chine — Alibaba" data-tag="Service">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster16.jpg" alt="After Work — Club Patra">
+        <div class="poster-meta"><span class="name">After Work — Club Patra</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p15" data-name="After Work — Club Patra" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster17.jpg" alt="Promo Noël — Katanga Print">
+        <div class="poster-meta"><span class="name">Promo Noël — Katanga Print</span><span class="tag">Service</span></div>
+        <button class="btn-select" type="button" data-id="p16" data-name="Promo Noël — Katanga Print" data-tag="Service">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster18.jpg" alt="Promo de l'année — ManoElectro">
+        <div class="poster-meta"><span class="name">Promo de l'année — ManoElectro</span><span class="tag">Commerce</span></div>
+        <button class="btn-select" type="button" data-id="p17" data-name="Promo de l'année — ManoElectro" data-tag="Commerce">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster19.jpg" alt="Offre Spéciale — Onyx Express">
+        <div class="poster-meta"><span class="name">Offre Spéciale — Onyx Express</span><span class="tag">Service</span></div>
+        <button class="btn-select" type="button" data-id="p18" data-name="Offre Spéciale — Onyx Express" data-tag="Service">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster20.jpg" alt="Ember Sales — Monique's Collection">
+        <div class="poster-meta"><span class="name">Ember Sales — Monique's Collection</span><span class="tag">Commerce</span></div>
+        <button class="btn-select" type="button" data-id="p19" data-name="Ember Sales — Monique's Collection" data-tag="Commerce">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster21.jpg" alt="Ember Sales — Lux By Tifé">
+        <div class="poster-meta"><span class="name">Ember Sales — Lux By Tifé</span><span class="tag">Commerce</span></div>
+        <button class="btn-select" type="button" data-id="p20" data-name="Ember Sales — Lux By Tifé" data-tag="Commerce">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster22.jpg" alt="Cadeau de Noël — Groupe Buco">
+        <div class="poster-meta"><span class="name">Cadeau de Noël — Groupe Buco</span><span class="tag">Service</span></div>
+        <button class="btn-select" type="button" data-id="p21" data-name="Cadeau de Noël — Groupe Buco" data-tag="Service">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster23.jpg" alt="Eve's Scents">
+        <div class="poster-meta"><span class="name">Eve's Scents</span><span class="tag">Commerce</span></div>
+        <button class="btn-select" type="button" data-id="p22" data-name="Eve's Scents" data-tag="Commerce">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster24.jpg" alt="Discount Accessoires — Erin Jewels">
+        <div class="poster-meta"><span class="name">Discount Accessoires — Erin Jewels</span><span class="tag">Commerce</span></div>
+        <button class="btn-select" type="button" data-id="p23" data-name="Discount Accessoires — Erin Jewels" data-tag="Commerce">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster25.jpg" alt="Aura Super Scents">
+        <div class="poster-meta"><span class="name">Aura Super Scents</span><span class="tag">Commerce</span></div>
+        <button class="btn-select" type="button" data-id="p24" data-name="Aura Super Scents" data-tag="Commerce">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster26.jpg" alt="Bertie's Perfumes">
+        <div class="poster-meta"><span class="name">Bertie's Perfumes</span><span class="tag">Commerce</span></div>
+        <button class="btn-select" type="button" data-id="p25" data-name="Bertie's Perfumes" data-tag="Commerce">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster27.jpg" alt="Xclusive Fragrances">
+        <div class="poster-meta"><span class="name">Xclusive Fragrances</span><span class="tag">Commerce</span></div>
+        <button class="btn-select" type="button" data-id="p26" data-name="Xclusive Fragrances" data-tag="Commerce">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster28.jpg" alt="Scent by Vickie">
+        <div class="poster-meta"><span class="name">Scent by Vickie</span><span class="tag">Commerce</span></div>
+        <button class="btn-select" type="button" data-id="p27" data-name="Scent by Vickie" data-tag="Commerce">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster29.jpg" alt="Mid Year Sales — Creaty Wigs">
+        <div class="poster-meta"><span class="name">Mid Year Sales — Creaty Wigs</span><span class="tag">Commerce</span></div>
+        <button class="btn-select" type="button" data-id="p28" data-name="Mid Year Sales — Creaty Wigs" data-tag="Commerce">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster30.jpg" alt="Shakers &amp; Ballers Night — Hive Lounge">
+        <div class="poster-meta"><span class="name">Shakers &amp; Ballers Night — Hive Lounge</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p29" data-name="Shakers &amp; Ballers Night — Hive Lounge" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster31.jpg" alt="Luxury Friday — LaJoie Lounge">
+        <div class="poster-meta"><span class="name">Luxury Friday — LaJoie Lounge</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p30" data-name="Luxury Friday — LaJoie Lounge" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster32.jpg" alt="Premium Friday — The Basement Club">
+        <div class="poster-meta"><span class="name">Premium Friday — The Basement Club</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p31" data-name="Premium Friday — The Basement Club" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster33.jpg" alt="Lituation Ladies Night — Pronto Lounge">
+        <div class="poster-meta"><span class="name">Lituation Ladies Night — Pronto Lounge</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p32" data-name="Lituation Ladies Night — Pronto Lounge" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster34.jpg" alt="Seductive Saturday — Iris Club">
+        <div class="poster-meta"><span class="name">Seductive Saturday — Iris Club</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p33" data-name="Seductive Saturday — Iris Club" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster35.jpg" alt="Ladies Night Wednesday — Space Lounge">
+        <div class="poster-meta"><span class="name">Ladies Night Wednesday — Space Lounge</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p34" data-name="Ladies Night Wednesday — Space Lounge" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster36.jpg" alt="Soft Life Wednesdays — The Box Lagos">
+        <div class="poster-meta"><span class="name">Soft Life Wednesdays — The Box Lagos</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p35" data-name="Soft Life Wednesdays — The Box Lagos" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster37.jpg" alt="Play Every Tuesday — Rumours Lounge">
+        <div class="poster-meta"><span class="name">Play Every Tuesday — Rumours Lounge</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p36" data-name="Play Every Tuesday — Rumours Lounge" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster38.jpg" alt="Oldies Fridays — Afro Club Kasangati">
+        <div class="poster-meta"><span class="name">Oldies Fridays — Afro Club Kasangati</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p37" data-name="Oldies Fridays — Afro Club Kasangati" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster39.jpg" alt="Cruise Saturday — Vicino Las Vegas">
+        <div class="poster-meta"><span class="name">Cruise Saturday — Vicino Las Vegas</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p38" data-name="Cruise Saturday — Vicino Las Vegas" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster40.jpg" alt="Beer Fest — Afro Club Kasangati">
+        <div class="poster-meta"><span class="name">Beer Fest — Afro Club Kasangati</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p39" data-name="Beer Fest — Afro Club Kasangati" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster41.jpg" alt="Glow in the Dark — Sky Lounge">
+        <div class="poster-meta"><span class="name">Glow in the Dark — Sky Lounge</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p40" data-name="Glow in the Dark — Sky Lounge" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster42.jpg" alt="No Stress Party Night — Lux-Club Pub">
+        <div class="poster-meta"><span class="name">No Stress Party Night — Lux-Club Pub</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p41" data-name="No Stress Party Night — Lux-Club Pub" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster43.jpg" alt="After Work Friday — Boza Club">
+        <div class="poster-meta"><span class="name">After Work Friday — Boza Club</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p42" data-name="After Work Friday — Boza Club" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster44.jpg" alt="Buvons — Tsingtao Plus">
+        <div class="poster-meta"><span class="name">Buvons — Tsingtao Plus</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p43" data-name="Buvons — Tsingtao Plus" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+        <img src="poster45.jpg" alt="Ladies Night — Noty Club">
+        <div class="poster-meta"><span class="name">Ladies Night — Noty Club</span><span class="tag">Événement</span></div>
+        <button class="btn-select" type="button" data-id="p44" data-name="Ladies Night — Noty Club" data-tag="Événement">+ Choisir ce style</button>
+      </div>
+
+      <div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster46.jpg" alt="Affiche de vente">
+      <div class="poster-meta"><span class="name">Affiche de vente</span><span class="tag">Commerce</span></div>
+      <button class="btn-select" type="button" data-id="p45_1783675606047" data-name="Affiche de vente" data-tag="Commerce">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster47.jpg" alt="Affiche de vente">
+      <div class="poster-meta"><span class="name">Affiche de vente</span><span class="tag">Commerce</span></div>
+      <button class="btn-select" type="button" data-id="p46_1783675627736" data-name="Affiche de vente" data-tag="Commerce">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="commerce"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster48.jpg" alt="Affiche de vente">
+      <div class="poster-meta"><span class="name">Affiche de vente</span><span class="tag">Commerce</span></div>
+      <button class="btn-select" type="button" data-id="p47_1783675643897" data-name="Affiche de vente" data-tag="Commerce">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster49.jpg" alt="LOGO">
+      <div class="poster-meta"><span class="name">LOGO</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p48_1783675721781" data-name="LOGO" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster50.jpg" alt="Logo">
+      <div class="poster-meta"><span class="name">Logo</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p49_1783675742729" data-name="Logo" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster51.jpg" alt="Logo">
+      <div class="poster-meta"><span class="name">Logo</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p50_1783675775066" data-name="Logo" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster52.jpg" alt="Logo">
+      <div class="poster-meta"><span class="name">Logo</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p51_1783675804205" data-name="Logo" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster53.jpg" alt="Affiche de soirée">
+      <div class="poster-meta"><span class="name">Affiche de soirée</span><span class="tag">Événement</span></div>
+      <button class="btn-select" type="button" data-id="p52_1783800978087" data-name="Affiche de soirée" data-tag="Événement">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster54.jpg" alt="Affiche de soirée">
+      <div class="poster-meta"><span class="name">Affiche de soirée</span><span class="tag">Événement</span></div>
+      <button class="btn-select" type="button" data-id="p53_1783800990115" data-name="Affiche de soirée" data-tag="Événement">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster55.jpg" alt="Affiche de soirée">
+      <div class="poster-meta"><span class="name">Affiche de soirée</span><span class="tag">Événement</span></div>
+      <button class="btn-select" type="button" data-id="p54_1783801002023" data-name="Affiche de soirée" data-tag="Événement">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster56.jpg" alt="Affiche de soirée">
+      <div class="poster-meta"><span class="name">Affiche de soirée</span><span class="tag">Événement</span></div>
+      <button class="btn-select" type="button" data-id="p55_1783801031237" data-name="Affiche de soirée" data-tag="Événement">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster57.jpg" alt="Affiche de soirée">
+      <div class="poster-meta"><span class="name">Affiche de soirée</span><span class="tag">Événement</span></div>
+      <button class="btn-select" type="button" data-id="p56_1783801047477" data-name="Affiche de soirée" data-tag="Événement">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster58.jpg" alt="Affiche de soirée">
+      <div class="poster-meta"><span class="name">Affiche de soirée</span><span class="tag">Événement</span></div>
+      <button class="btn-select" type="button" data-id="p57_1783801060986" data-name="Affiche de soirée" data-tag="Événement">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="evenement"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster59.jpg" alt="Affiche de soirée">
+      <div class="poster-meta"><span class="name">Affiche de soirée</span><span class="tag">Événement</span></div>
+      <button class="btn-select" type="button" data-id="p58_1783801075625" data-name="Affiche de soirée" data-tag="Événement">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster60.jpg" alt="Affiche Business">
+      <div class="poster-meta"><span class="name">Affiche Business</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p59_1783801112550" data-name="Affiche Business" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster61.jpg" alt="Affiche Business">
+      <div class="poster-meta"><span class="name">Affiche Business</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p60_1783801127167" data-name="Affiche Business" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster62.jpg" alt="Affiche Business">
+      <div class="poster-meta"><span class="name">Affiche Business</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p61_1783801149933" data-name="Affiche Business" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster63.jpg" alt="Affiche Business">
+      <div class="poster-meta"><span class="name">Affiche Business</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p62_1783801165184" data-name="Affiche Business" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster64.jpg" alt="Affiche de soirée">
+      <div class="poster-meta"><span class="name">Affiche de soirée</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p63_1783801197798" data-name="Affiche de soirée" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster65.jpg" alt="Affiche de soirée">
+      <div class="poster-meta"><span class="name">Affiche de soirée</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p64_1783801208544" data-name="Affiche de soirée" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster66.jpg" alt="Affiche de soirée">
+      <div class="poster-meta"><span class="name">Affiche de soirée</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p65_1783801220706" data-name="Affiche de soirée" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster67.jpg" alt="Affiche de soirée">
+      <div class="poster-meta"><span class="name">Affiche de soirée</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p66_1783801238238" data-name="Affiche de soirée" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster68.jpg" alt="Affiche business">
+      <div class="poster-meta"><span class="name">Affiche business</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p67_1783801256576" data-name="Affiche business" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster69.jpg" alt="Affiche de soirée">
+      <div class="poster-meta"><span class="name">Affiche de soirée</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p68_1783801267836" data-name="Affiche de soirée" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster70.jpg" alt="LOGO">
+      <div class="poster-meta"><span class="name">LOGO</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p69_1783801280285" data-name="LOGO" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster71.jpg" alt="LOGO">
+      <div class="poster-meta"><span class="name">LOGO</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p70_1783801290756" data-name="LOGO" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster72.jpg" alt="LOGO">
+      <div class="poster-meta"><span class="name">LOGO</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p71_1783801303054" data-name="LOGO" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster73.jpg" alt="LOGO">
+      <div class="poster-meta"><span class="name">LOGO</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p72_1783801320113" data-name="LOGO" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster74.jpg" alt="LOGO">
+      <div class="poster-meta"><span class="name">LOGO</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p73_1783801350825" data-name="LOGO" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster75.jpg" alt="LOGO">
+      <div class="poster-meta"><span class="name">LOGO</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p74_1783801364556" data-name="LOGO" data-tag="Service">+ Choisir ce style</button>
+    </div><div class="poster-card" data-cat="service"><button type="button" class="poster-like-btn" aria-label="J'aime cette affiche">♡</button>
+      <img src="poster76.jpg" alt="LOGO">
+      <div class="poster-meta"><span class="name">LOGO</span><span class="tag">Service</span></div>
+      <button class="btn-select" type="button" data-id="p75_1783801377315" data-name="LOGO" data-tag="Service">+ Choisir ce style</button>
+    </div><div id="addPosterCard">
+        <span class="plus">+</span>
+        <span>Ajouter une affiche</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">La méthode</span>
+      <h2>4 étapes, du brief à la livraison</h2>
+      <p>Pas de blabla : tu expliques ton besoin, on s'occupe du reste.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step">
+        <span class="num">01</span>
+        <h3>Tu décris ton projet</h3>
+        <p>Écris-nous sur WhatsApp : type d'affiche, infos à afficher, date de l'événement.</p>
+      </div>
+      <div class="process-step">
+        <span class="num">02</span>
+        <h3>On propose une maquette</h3>
+        <p>Première version envoyée sous 24h avec le style discuté ensemble.</p>
+      </div>
+      <div class="process-step">
+        <span class="num">03</span>
+        <h3>Tu valides ou ajustes</h3>
+        <p>Retouches incluses jusqu'à ce que l'affiche te plaise vraiment.</p>
+      </div>
+      <div class="process-step">
+        <span class="num">04</span>
+        <h3>Livraison</h3>
+        <p>Fichier haute qualité prêt pour impression, Facebook, Instagram ou WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="order-section" id="commander">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Tarifs</span>
+      <h2>Choisis ta formule</h2>
+      <p>Tarifs indicatifs — ajustés selon la complexité et l'urgence du projet.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Affiche Simple</h3>
+        <div class="price">5 000F <small>/ affiche</small></div>
+        <ul>
+          <li>1 visuel format réseaux sociaux</li>
+          <li>1 aller-retour de retouche</li>
+          <li>Livraison sous 24h</li>
+        </ul>
+        <a href="https://wa.me/2250747626380?text=Bonjour%2C%20je%20veux%20une%20Affiche%20Simple" class="btn btn-outline" target="_blank" rel="noopener" style="width:100%; justify-content:center; border-color:#fff; color:#fff;">Commander</a>
+      </div>
+
+      <div class="price-card featured">
+        <span class="badge">Populaire</span>
+        <h3>Affiche Premium</h3>
+        <div class="price">10 000F <small>/ affiche</small></div>
+        <ul>
+          <li>Visuel + déclinaison story</li>
+          <li>Identité visuelle respectée (logo, couleurs)</li>
+          <li>2 allers-retours de retouche</li>
+          <li>Livraison sous 24h</li>
+        </ul>
+        <a href="https://wa.me/2250747626380?text=Bonjour%2C%20je%20veux%20une%20Affiche%20Premium" class="btn btn-coral" target="_blank" rel="noopener" style="width:100%; justify-content:center;">Commander</a>
+      </div>
+
+      <div class="price-card">
+        <h3>Pack Événement</h3>
+        <div class="price">20 000F <small>/ pack</small></div>
+        <ul>
+          <li>Affiche + flyer + story + cover</li>
+          <li>Décliné pour Facebook, Instagram, WhatsApp</li>
+          <li>Retouches illimitées avant l'événement</li>
+        </ul>
+        <a href="https://wa.me/2250747626380?text=Bonjour%2C%20je%20veux%20un%20Pack%20%C3%89v%C3%A9nement" class="btn btn-outline" target="_blank" rel="noopener" style="width:100%; justify-content:center; border-color:#fff; color:#fff;">Commander</a>
+      </div>
+    </div>
+
+    <div class="pay-panel">
+      <div>
+        <div class="eyebrow" style="margin-bottom:8px;">Paiement</div>
+        <div class="pay-methods">
+          <a href="https://pay.wave.com/m/M_ci_0-uNFvIcQwuu/c/ci/" target="_blank" rel="noopener" class="pay-pill" style="text-decoration:none; cursor:pointer;"><span class="dot dot-wave"></span> Payer avec Wave</a>
+          <button type="button" id="omPayBtn" class="pay-pill" style="border:none; font:inherit; cursor:pointer;"><span class="dot dot-om"></span> Payer avec Orange Money</button>
+        </div>
+      </div>
+      <div style="font-family:'Inter',sans-serif; font-size:20px; font-weight:700;">
+        <a href="tel:+225 07 47 62 63 80">+225 07 47 62 63 80</a>
+      </div>
+      <p class="pay-note">Un acompte de 50% est demandé pour démarrer le projet, le solde à la livraison.</p>
+    </div>
+  </div>
+</section>
+
+<button id="desktopModeFab" aria-label="Passer en mode ordinateur" title="Passer en mode ordinateur">🖥️</button>
+<button id="adminFab" aria-label="Administrateur">🔑</button>
+
+<div id="accountOverlay" class="">
+  <div class="admin-modal">
+    <h3 id="accountModalTitle">Mon compte</h3>
+    <p id="accountModalSub">Connecte-toi, ou crée ton compte si c'est ta première visite.</p>
+
+    <div id="accountTabs" style="display:flex; gap:8px; margin-bottom:16px;">
+      <button type="button" id="accountTabLogin" class="admin-cancel" style="flex:1; border:2px solid var(--line); border-radius:10px; padding:10px; font-weight:700;">Se connecter</button>
+      <button type="button" id="accountTabSignup" class="admin-cancel" style="flex:1; border:2px solid var(--line); border-radius:10px; padding:10px; font-weight:700;">Créer un compte</button>
+    </div>
+
+    <p class="admin-error" id="accountError" style="display:none; color:var(--coral); font-size:12.5px; margin:-6px 0 12px;"></p>
+
+    <div id="accountLoginView" style="display:block;">
+      <input type="email" id="loginEmailInput" placeholder="Ton email" autocapitalize="off" autocorrect="off">
+      <div class="pw-field">
+        <input type="password" id="loginPasswordInput" placeholder="Mot de passe">
+        <button type="button" class="pw-toggle" data-target="loginPasswordInput" aria-label="Afficher le mot de passe">👁️</button>
+      </div>
+      <button class="btn btn-ink" id="accountLoginBtn">Se connecter</button>
+      <button class="admin-cancel" id="accountCancelBtn">Annuler</button>
+    </div>
+
+    <div id="accountSignupView" style="display:none;">
+      <input type="text" id="signupNameInput" placeholder="Ton nom">
+      <input type="email" id="signupEmailInput" placeholder="Ton email" autocapitalize="off" autocorrect="off">
+      <input type="text" id="signupPhoneInput" placeholder="Numéro WhatsApp (avec indicatif)">
+      <div class="pw-field">
+        <input type="password" id="signupPasswordInput" placeholder="Mot de passe (6 caractères min.)">
+        <button type="button" class="pw-toggle" data-target="signupPasswordInput" aria-label="Afficher le mot de passe">👁️</button>
+      </div>
+      <button class="btn btn-ink" id="accountSignupBtn">Créer mon compte</button>
+      <button class="admin-cancel" id="accountCancelBtn2">Annuler</button>
+    </div>
+
+    <div id="accountWelcomeView" style="display:none;">
+      <p id="accountWelcomeText" style="font-size:14px; margin-bottom:16px;"></p>
+      <button class="btn btn-ink" id="accountEditBtn">Modifier mes infos</button>
+      <button class="admin-cancel" id="accountLogoutBtn">Se déconnecter</button>
+      <button class="admin-cancel" id="accountCloseBtn">Fermer</button>
+    </div>
+
+    <div id="accountEditView" style="display:none;">
+      <input type="text" id="editNameInput" placeholder="Ton nom">
+      <input type="text" id="editPhoneInput" placeholder="Numéro WhatsApp (avec indicatif)">
+      <button class="btn btn-ink" id="accountEditSaveBtn">Enregistrer</button>
+      <button class="admin-cancel" id="accountEditCancelBtn">Annuler</button>
+    </div>
+  </div>
+</div>
+
+<div id="adminLoginOverlay" class="">
+  <div class="admin-modal">
+    <h3 id="adminModalTitle">Connexion propriétaire</h3>
+    <p id="adminModalSub">Entre ton mot de passe pour passer en mode Admin.</p>
+    <div class="pw-field">
+      <input type="password" id="adminPassInput" placeholder="Mot de passe" autocapitalize="off" autocorrect="off" spellcheck="false" style="display: block;">
+      <button type="button" class="pw-toggle" data-target="adminPassInput" aria-label="Afficher le mot de passe">👁️</button>
+    </div>
+    <p class="admin-error" id="adminError" style="display: none;">Mot de passe incorrect.</p>
+    <button class="btn btn-ink" id="adminLoginBtn">Se connecter</button>
+    <button class="admin-cancel" id="adminCancelBtn">Annuler</button>
+  </div>
+</div>
+
+<div id="posterFormOverlay" class="">
+  <div class="admin-modal">
+    <h3>Ajouter une affiche</h3>
+    <p>Choisis une image, un nom et une catégorie.</p>
+    <img id="posterPreview" class="preview-thumb" alt="Aperçu" src="poster77.jpg" style="display: block;">
+    <input type="file" id="posterFileInput" accept="image/*">
+    <input type="text" id="posterNameInput" placeholder="Nom de l'affiche">
+    <select id="posterTagSelect">
+      <option value="Événement">Événement</option>
+      <option value="Service">Service</option>
+      <option value="Commerce">Commerce</option>
+      <option value="Immobilier">Immobilier</option>
+    </select>
+    <button class="btn btn-ink" id="posterFormSave">Ajouter au site</button>
+    <button class="admin-cancel" id="posterFormCancel">Annuler</button>
+  </div>
+</div>
+
+<div id="adminBar">
+  🔑 <b>Mode Admin actif</b>
+  <button id="adminUsersBtn">👥 Voir les inscrits</button>
+  <button id="adminCopyBtn">📋 Copier le code</button>
+  <button id="adminExportBtn">💾 Exporter le site</button>
+  <button id="adminLogoutBtn">Quitter</button>
+</div>
+
+<div id="usersOverlay">
+  <div class="admin-modal" style="max-width:480px; width:92%; max-height:80vh; display:flex; flex-direction:column;">
+    <h3>Utilisateurs inscrits</h3>
+    <p id="usersCount" style="font-size:13px; color:var(--ink-soft); margin-top:-8px;"></p>
+    <div id="usersList" style="overflow-y:auto; flex:1; text-align:left; margin:12px 0;"></div>
+    <button class="admin-cancel" id="usersCloseBtn">Fermer</button>
+  </div>
+</div>
+
+<button id="profileFab" aria-label="Profil">👤</button>
+
+<div id="profileOverlay">
+  <div id="profilePanel">
+    <div class="cart-head">
+      <h3>Profil du site</h3>
+      <button class="cart-close" id="profileClose" aria-label="Fermer">×</button>
+    </div>
+    <div class="settings-body">
+
+      <div class="settings-group">
+        <h4>Vue d'ensemble</h4>
+        <div class="profile-stats" id="profileStats"></div>
+      </div>
+
+      <div class="settings-group">
+        <h4>Mes affiches</h4>
+        <input type="text" class="profile-search" id="profileSearch" placeholder="Rechercher une affiche...">
+        <div class="profile-list" id="profileList"></div>
+      </div>
+
+      <div class="settings-group">
+        <h4>Contact &amp; suivi</h4>
+        <div class="profile-info-row">
+          <span class="pi-label">WhatsApp</span>
+          <span class="pi-value" id="profileWa"></span>
+        </div>
+        <div class="profile-info-row">
+          <span class="pi-label">Facebook</span>
+          <span class="pi-value">Connecté</span>
+        </div>
+        <div class="profile-info-row">
+          <span class="pi-label">Google Analytics</span>
+          <span class="pi-value" id="profileGa"></span>
+        </div>
+        <p class="settings-hint" style="margin-top:12px;">Modifie ces réglages dans ⚙️ Paramètres.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<button id="settingsFab" aria-label="Paramètres">⚙️</button>
+
+<div id="settingsOverlay" class="">
+  <div id="settingsPanel">
+    <div class="cart-head">
+      <h3>Paramètres</h3>
+      <button class="cart-close" id="settingsClose" aria-label="Fermer">×</button>
+    </div>
+    <div class="settings-body">
+
+      <div class="settings-group">
+        <h4>Apparence</h4>
+        <div class="theme-switch">
+          <button type="button" id="themeLight" data-theme="light" class="active">☀️ Clair</button>
+          <button type="button" id="themeDark" data-theme="dark">🌙 Sombre</button>
+        </div>
+      </div>
+
+      <div class="settings-group">
+        <h4>Contact WhatsApp</h4>
+        <div class="settings-field">
+          <label for="waNumberInput">Numéro WhatsApp (avec indicatif, sans +)</label>
+          <input type="text" id="waNumberInput" placeholder="2250747626380">
+          <p class="settings-hint">Utilisé pour tous les boutons "Commander" et pour la sélection d'affiches.</p>
+          <button class="btn btn-ink" id="waNumberSave">Enregistrer</button>
+          <span id="settingsSavedMsg">✓ Enregistré</span>
+        </div>
+      </div>
+
+      <div class="settings-group">
+        <h4>Google Analytics</h4>
+        <div class="settings-field">
+          <label for="gaIdInput">ID de mesure (ex: G-XXXXXXXXXX)</label>
+          <input type="text" id="gaIdInput" placeholder="G-XXXXXXXXXX">
+          <p class="settings-hint">Colle ici l'ID fourni par analytics.google.com pour activer le suivi des visiteurs.</p>
+          <button class="btn btn-ink" id="gaIdSave">Enregistrer</button>
+          <span id="gaSavedMsg" style="font-size:12.5px; color:var(--green-deep); font-weight:700; display:none; margin-top:4px;">✓ Activé</span>
+          <p id="gaStatus" class="settings-hint" style="margin-top:10px;">Aucun suivi actif pour l'instant.</p>
+        </div>
+      </div>
+
+      <div class="settings-group">
+        <h4>Notifications WhatsApp</h4>
+        <div class="settings-field">
+          <label for="cmbKeyInput">Clé API CallMeBot</label>
+          <input type="text" id="cmbKeyInput" placeholder="Ex: 123456">
+          <p class="settings-hint">Reçois une notif WhatsApp à chaque visite et à chaque création de compte. Envoie "I allow callmebot to send me messages" au <chrome_annotation role="link" style="border-bottom: 1px solid rgb(81, 79, 69);"><a href="tel:+34 644 59 71 65">+34 644 59 71 65</a></chrome_annotation> pour obtenir ta clé.</p>
+          <button class="btn btn-ink" id="cmbKeySave">Enregistrer</button>
+          <span id="cmbSavedMsg" style="font-size:12.5px; color:var(--green-deep); font-weight:700; display:none; margin-top:4px;">✓ Activé</span>
+          <p id="cmbStatus" class="settings-hint" style="margin-top:10px;">Aucune notification active pour l'instant.</p>
+        </div>
+      </div>
+
+      <div class="settings-group">
+        <h4>Panier / Sélection</h4>
+        <p class="settings-hint">Retire toutes les affiches actuellement sélectionnées.</p>
+        <button class="btn btn-outline" id="clearCartBtn" style="width:100%; justify-content:center; border-color:var(--text); color:var(--text);">🗑️ Vider ma sélection</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<button id="cartFab" aria-label="Ma sélection d'affiches">
+  🛒<span class="cart-count" id="cartCount" style="display:none;">0</span>
+</button>
+
+<div id="cartOverlay">
+  <div id="cartPanel">
+    <div class="cart-head">
+      <h3>Ma sélection</h3>
+      <button class="cart-close" id="cartClose" aria-label="Fermer">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"><p class="cart-empty">Aucune affiche choisie pour l'instant. Clique sur "+ Choisir ce style" sous une affiche qui te plaît.</p></div>
+    <div class="cart-foot">
+      <a href="https://wa.me/2250747626380?text=Bonjour%20Caporal%20Design%20%F0%9F%91%8B%2C%20je%20suis%20Anicetulrich225%20(WhatsApp%20).%20Je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le(s)%20style(s)%20suivant(s)%20%3A%0A%0A(aucune%20affiche%20s%C3%A9lectionn%C3%A9e%20pour%20l'instant)%0APouvez-vous%20me%20faire%20une%20proposition%20dans%20ce%20style%20%3F" id="cartWhatsapp" class="btn btn-coral" target="_blank" rel="noopener">💬 Envoyer ma sélection sur WhatsApp</a>
+      <p class="cart-note">On te répond avec un devis basé sur le(s) style(s) choisi(s).</p>
+    </div>
+  </div>
+</div>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <span class="eyebrow">Parlons de ton projet</span>
+        <h2>On répond vite sur WhatsApp.</h2>
+        <p>Décris ton événement, ton business ou ton idée — on te propose une maquette sous 24h.</p>
+        <a href="https://wa.me/2250747626380" class="btn btn-coral" target="_blank" rel="noopener">💬 Écrire sur WhatsApp</a>
+      </div>
+      <div class="contact-card">
+        <span class="eyebrow">Nos coordonnées</span>
+        <h2 style="font-size:26px;">Restons connectés</h2>
+        <div class="contact-list">
+          <a href="tel:+2250747626380" class="contact-item"><span class="ic">📞</span> +225 07 47 62 63 80</a>
+          <a href="https://wa.me/2250747626380" class="contact-item" target="_blank" rel="noopener"><span class="ic">💬</span> WhatsApp</a>
+          <a href="https://www.facebook.com/share/18jJdq2hDP/?mibextid=wwXIfr" class="contact-item" target="_blank" rel="noopener"><span class="ic">📘</span> Facebook — Caporal CL Laminoush</a>
+          <a href="#" class="contact-item"><span class="ic">📸</span> Instagram — Caporallaminoush</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-note">
+      <span>© 2026 CAPORAL.DESIGN — Tous droits réservés</span>
+      <span>Affiches · Flyers · Logos · Création de marque</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import {
+    getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,
+    signOut, onAuthStateChanged
+  } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+  import {
+    getFirestore, doc, setDoc, getDoc, updateDoc, collection, getDocs,
+    serverTimestamp, query, orderBy
+  } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCmDLLYn3zFCbWCCD7EE-NaiCcKa-CzGwE",
+    authDomain: "caporaldesign-53b93.firebaseapp.com",
+    projectId: "caporaldesign-53b93",
+    storageBucket: "caporaldesign-53b93.firebasestorage.app",
+    messagingSenderId: "929412848223",
+    appId: "1:929412848223:web:3bffbb0babf1013c3199ea"
+  };
+
+  const fbApp = initializeApp(firebaseConfig);
+  const fbAuth = getAuth(fbApp);
+  const fbDb = getFirestore(fbApp);
+
+  window.FB = {
+    auth: fbAuth, db: fbDb,
+    createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged,
+    doc, setDoc, getDoc, updateDoc, collection, getDocs, serverTimestamp, query, orderBy
+  };
+  window.dispatchEvent(new Event('fb-ready'));
+</script>
+
+<script>
+  document.body.classList.add('splash-lock');
+  const splash = document.getElementById('splash');
+
+  function playChime(){
+    try{
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      const ctx = new Ctx();
+      const now = ctx.currentTime;
+      const notes = [523.25, 659.25, 783.99, 1046.5]; // C5, E5, G5, C6 - accord d'ouverture renforcé
+      notes.forEach((freq, i) => {
+        const start = now + i * 0.08;
+
+        // Couche 1 : sinus (rondeur)
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(0, start);
+        gain.gain.linearRampToValueAtTime(0.38, start + 0.035);
+        gain.gain.exponentialRampToValueAtTime(0.001, start + 0.85);
+        osc.connect(gain).connect(ctx.destination);
+        osc.start(start);
+        osc.stop(start + 0.9);
+
+        // Couche 2 : triangle (plus de présence/corps)
+        const osc2 = ctx.createOscillator();
+        const gain2 = ctx.createGain();
+        osc2.type = 'triangle';
+        osc2.frequency.value = freq;
+        gain2.gain.setValueAtTime(0, start);
+        gain2.gain.linearRampToValueAtTime(0.16, start + 0.035);
+        gain2.gain.exponentialRampToValueAtTime(0.001, start + 0.7);
+        osc2.connect(gain2).connect(ctx.destination);
+        osc2.start(start);
+        osc2.stop(start + 0.75);
+      });
+
+      // Basse d'impact au tout début pour donner du poids à l'ouverture
+      const bass = ctx.createOscillator();
+      const bassGain = ctx.createGain();
+      bass.type = 'sine';
+      bass.frequency.value = 130.81; // C3
+      bassGain.gain.setValueAtTime(0, now);
+      bassGain.gain.linearRampToValueAtTime(0.3, now + 0.02);
+      bassGain.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
+      bass.connect(bassGain).connect(ctx.destination);
+      bass.start(now);
+      bass.stop(now + 0.55);
+    }catch(e){ /* audio non disponible, on ignore silencieusement */ }
+  }
+
+  let chimePlayed = false;
+  function tryPlayChime(){
+    if(!chimePlayed){ chimePlayed = true; playChime(); }
+  }
+
+  /* ---------- VOIX DE BIENVENUE (homme, français) ---------- */
+  let welcomeVoicePlayed = false;
+  function pickMaleFrenchVoice(){
+    const voices = window.speechSynthesis.getVoices();
+    const frVoices = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('fr'));
+    const maleNames = ['thomas', 'daniel', 'nicolas', 'paul', 'homme', 'male', 'guillaume', 'antoine'];
+    let voice = frVoices.find(v => maleNames.some(n => v.name.toLowerCase().includes(n)));
+    if(!voice) voice = frVoices.find(v => !/female|femme|amelie|amélie|marie|julie|audrey|celine|céline/i.test(v.name));
+    if(!voice) voice = frVoices[0];
+    return voice || null;
+  }
+  function tryPlayWelcomeVoice(){
+    if(welcomeVoicePlayed) return;
+    if(!('speechSynthesis' in window)) return;
+    welcomeVoicePlayed = true;
+    const speak = () => {
+      const utter = new SpeechSynthesisUtterance("Bienvenue sur Caporaldesign.com, veuillez choisir le modèle de votre voix et nous ferons le travail.");
+      utter.lang = 'fr-FR';
+      utter.pitch = 0.75;
+      utter.rate = 0.98;
+      utter.volume = 1;
+      const voice = pickMaleFrenchVoice();
+      if(voice) utter.voice = voice;
+      window.speechSynthesis.speak(utter);
+    };
+    if(window.speechSynthesis.getVoices().length === 0){
+      window.speechSynthesis.addEventListener('voiceschanged', speak, { once:true });
+    }else{
+      speak();
+    }
+  }
+
+  function closeSplash(){
+    splash.classList.add('hide');
+    document.body.classList.remove('splash-lock');
+    if(typeof maybeForceAccountCreation === 'function'){ maybeForceAccountCreation(); }
+  }
+
+  // Les navigateurs (surtout Safari iPhone) bloquent tout son tant qu'il n'y a pas
+  // eu d'interaction de l'utilisateur. On ne tente donc PAS de jouer le son au
+  // chargement : on attend le premier tap/clic, qui déclenche le son de façon fiable.
+  document.addEventListener('pointerdown', () => { tryPlayChime(); tryPlayWelcomeVoice(); }, { once:true });
+
+  document.getElementById('splashEnter').addEventListener('click', () => {
+    tryPlayChime();
+    tryPlayWelcomeVoice();
+    closeSplash();
+  });
+  setTimeout(closeSplash, 6500);
+
+  /* ---------- SON DE CLIC GLOBAL ---------- */
+  let clickCtx = null;
+  function playClickSound(){
+    try{
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      if(!clickCtx) clickCtx = new Ctx();
+      if(clickCtx.state === 'suspended') clickCtx.resume();
+      const now = clickCtx.currentTime;
+      const osc = clickCtx.createOscillator();
+      const gain = clickCtx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(950, now);
+      osc.frequency.exponentialRampToValueAtTime(300, now + 0.08);
+      gain.gain.setValueAtTime(0.18, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.09);
+      osc.connect(gain).connect(clickCtx.destination);
+      osc.start(now);
+      osc.stop(now + 0.1);
+    }catch(e){ /* audio non disponible, on ignore silencieusement */ }
+  }
+  document.addEventListener('click', playClickSound);
+
+  /* ---------- AFFICHER / MASQUER MOT DE PASSE ---------- */
+  document.querySelectorAll('.pw-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const input = document.getElementById(btn.dataset.target);
+      if(!input) return;
+      const isHidden = input.type === 'password';
+      input.type = isHidden ? 'text' : 'password';
+      btn.textContent = isHidden ? '🙈' : '👁️';
+      btn.setAttribute('aria-label', isHidden ? 'Masquer le mot de passe' : 'Afficher le mot de passe');
+    });
+  });
+
+  /* ---------- MODE ORDINATEUR (desktop) SUR MOBILE ---------- */
+  const desktopModeFab = document.getElementById('desktopModeFab');
+  const viewportMeta = document.getElementById('viewportMeta');
+  const DESKTOP_WIDTH = 1280;
+
+  function applyDesktopMode(on){
+    if(on){
+      viewportMeta.setAttribute('content', 'width=' + DESKTOP_WIDTH + ', initial-scale=0.35');
+      document.body.classList.add('desktop-mode');
+      desktopModeFab.textContent = '📱';
+      desktopModeFab.title = 'Revenir au mode mobile';
+      desktopModeFab.setAttribute('aria-label', 'Revenir au mode mobile');
+      try{ localStorage.setItem('cd_desktop_mode', '1'); }catch(e){}
+    }else{
+      viewportMeta.setAttribute('content', 'width=device-width, initial-scale=1.0');
+      document.body.classList.remove('desktop-mode');
+      desktopModeFab.textContent = '🖥️';
+      desktopModeFab.title = 'Passer en mode ordinateur';
+      desktopModeFab.setAttribute('aria-label', 'Passer en mode ordinateur');
+      try{ localStorage.setItem('cd_desktop_mode', '0'); }catch(e){}
+    }
+  }
+
+  if(desktopModeFab){
+    desktopModeFab.addEventListener('click', () => {
+      applyDesktopMode(!document.body.classList.contains('desktop-mode'));
+    });
+    try{
+      if(localStorage.getItem('cd_desktop_mode') === '1') applyDesktopMode(true);
+    }catch(e){}
+  }
+
+  /* ---------- PARAMÈTRES (thème + numéro WhatsApp) ---------- */
+  let WHATSAPP_NUMBER = localStorage.getItem('cd_wa_number') || "2250747626380";
+
+  function applyTheme(theme){
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('cd_theme', theme);
+    document.getElementById('themeLight').classList.toggle('active', theme === 'light');
+    document.getElementById('themeDark').classList.toggle('active', theme === 'dark');
+  }
+  applyTheme(localStorage.getItem('cd_theme') || 'light');
+
+  /* ---------- GOOGLE ANALYTICS (chargement dynamique) ---------- */
+  function loadGoogleAnalytics(id){
+    if(!id || document.getElementById('ga-script')) return;
+    const s1 = document.createElement('script');
+    s1.id = 'ga-script';
+    s1.async = true;
+    s1.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
+    document.head.appendChild(s1);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', id);
+  }
+  const savedGaId = localStorage.getItem('cd_ga_id');
+  if(savedGaId){ loadGoogleAnalytics(savedGaId); }
+
+  const gaIdInput = document.getElementById('gaIdInput');
+  const gaIdSave = document.getElementById('gaIdSave');
+  const gaSavedMsg = document.getElementById('gaSavedMsg');
+  const gaStatus = document.getElementById('gaStatus');
+  function refreshGaStatus(){
+    const id = localStorage.getItem('cd_ga_id');
+    gaStatus.textContent = id ? `Suivi actif avec l'ID ${id}. Consulte tes statistiques sur analytics.google.com.` : "Aucun suivi actif pour l'instant.";
+  }
+  gaIdSave.addEventListener('click', () => {
+    const val = gaIdInput.value.trim();
+    if(!/^G-[A-Z0-9]+$/i.test(val)){
+      gaIdInput.style.borderColor = 'var(--coral)';
+      return;
+    }
+    gaIdInput.style.borderColor = 'var(--line)';
+    localStorage.setItem('cd_ga_id', val);
+    loadGoogleAnalytics(val);
+    gaSavedMsg.style.display = 'inline';
+    refreshGaStatus();
+    setTimeout(() => { gaSavedMsg.style.display = 'none'; }, 2500);
+  });
+
+  /* ---------- NOTIFICATIONS WHATSAPP (CallMeBot) ---------- */
+  const cmbKeyInput = document.getElementById('cmbKeyInput');
+  const cmbKeySave = document.getElementById('cmbKeySave');
+  const cmbSavedMsg = document.getElementById('cmbSavedMsg');
+  const cmbStatus = document.getElementById('cmbStatus');
+
+  function sendWhatsAppNotification(text){
+    const key = localStorage.getItem('cd_cmb_key');
+    if(!key || !WHATSAPP_NUMBER) return;
+    const url = `https://api.callmebot.com/whatsapp.php?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(text)}&apikey=${key}`;
+    // On utilise une image invisible pour déclencher l'appel sans souci de CORS
+    const pixel = new Image();
+    pixel.src = url;
+  }
+
+  function refreshCmbStatus(){
+    const key = localStorage.getItem('cd_cmb_key');
+    cmbStatus.textContent = key ? "Notifications actives." : "Aucune notification active pour l'instant.";
+  }
+
+  cmbKeySave.addEventListener('click', () => {
+    const val = cmbKeyInput.value.trim();
+    if(!val){
+      cmbKeyInput.style.borderColor = 'var(--coral)';
+      return;
+    }
+    cmbKeyInput.style.borderColor = 'var(--line)';
+    localStorage.setItem('cd_cmb_key', val);
+    cmbSavedMsg.style.display = 'inline';
+    refreshCmbStatus();
+    setTimeout(() => { cmbSavedMsg.style.display = 'none'; }, 2500);
+  });
+
+  /* Notification à chaque visite (une seule fois par session, jamais en mode admin) */
+  if(!isAdmin() && sessionStorage.getItem('cd_visit_notified') !== '1'){
+    sessionStorage.setItem('cd_visit_notified', '1');
+    sendWhatsAppNotification("👀 Quelqu'un visite ton site Caporal Design en ce moment.");
+  }
+
+  function applyWhatsappNumber(number){
+    WHATSAPP_NUMBER = number;
+    localStorage.setItem('cd_wa_number', number);
+    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(a => {
+      a.setAttribute('href', a.getAttribute('href').replace(/wa\.me\/\d+/, `wa.me/${number}`));
+    });
+    renderCart();
+  }
+
+  const settingsFab = document.getElementById('settingsFab');
+  const settingsOverlay = document.getElementById('settingsOverlay');
+  const settingsClose = document.getElementById('settingsClose');
+  const waNumberInput = document.getElementById('waNumberInput');
+  const waNumberSave = document.getElementById('waNumberSave');
+  const settingsSavedMsg = document.getElementById('settingsSavedMsg');
+  const clearCartBtn = document.getElementById('clearCartBtn');
+
+  function openSettings(){
+    if(!isAdmin()) return;
+    waNumberInput.value = WHATSAPP_NUMBER;
+    gaIdInput.value = localStorage.getItem('cd_ga_id') || '';
+    refreshGaStatus();
+    cmbKeyInput.value = localStorage.getItem('cd_cmb_key') || '';
+    refreshCmbStatus();
+    settingsOverlay.classList.add('open');
+  }
+  function closeSettings(){ settingsOverlay.classList.remove('open'); }
+  settingsFab.addEventListener('click', openSettings);
+  settingsClose.addEventListener('click', closeSettings);
+  settingsOverlay.addEventListener('click', (e) => { if(e.target === settingsOverlay) closeSettings(); });
+
+  document.getElementById('themeLight').addEventListener('click', () => applyTheme('light'));
+  document.getElementById('themeDark').addEventListener('click', () => applyTheme('dark'));
+
+  waNumberSave.addEventListener('click', () => {
+    const val = waNumberInput.value.replace(/\D/g, '');
+    if(val.length < 8){
+      waNumberInput.style.borderColor = 'var(--coral)';
+      return;
+    }
+    waNumberInput.style.borderColor = 'var(--line)';
+    applyWhatsappNumber(val);
+    settingsSavedMsg.style.display = 'inline';
+    setTimeout(() => { settingsSavedMsg.style.display = 'none'; }, 2000);
+  });
+
+  clearCartBtn.addEventListener('click', () => {
+    cart = [];
+    document.querySelectorAll('.btn-select.selected').forEach(btn => {
+      btn.classList.remove('selected');
+      btn.textContent = '+ Choisir ce style';
+    });
+    renderCart();
+  });
+
+  /* ---------- CART / SÉLECTION D'AFFICHES ---------- */
+  let cart = [];
+
+  const cartFab = document.getElementById('cartFab');
+  const cartCount = document.getElementById('cartCount');
+  const cartOverlay = document.getElementById('cartOverlay');
+  const cartClose = document.getElementById('cartClose');
+  const cartItemsEl = document.getElementById('cartItems');
+  const cartWhatsapp = document.getElementById('cartWhatsapp');
+
+  function openCart(){ cartOverlay.classList.add('open'); }
+  function closeCart(){ cartOverlay.classList.remove('open'); }
+  cartFab.addEventListener('click', openCart);
+  cartClose.addEventListener('click', closeCart);
+  cartOverlay.addEventListener('click', (e) => { if(e.target === cartOverlay) closeCart(); });
+
+  /* ---------- RÉFÉRENCE NUMÉROTÉE SUR CHAQUE AFFICHE ---------- */
+  function numberPosterCards(){
+    document.querySelectorAll('.poster-card').forEach((card, i) => {
+      const ref = 'REF-' + String(i + 1).padStart(2, '0');
+      card.dataset.ref = ref;
+      let badge = card.querySelector('.poster-ref-badge');
+      if(!badge){
+        badge = document.createElement('span');
+        badge.className = 'poster-ref-badge';
+        card.insertBefore(badge, card.firstChild);
+      }
+      badge.textContent = '#' + String(i + 1).padStart(2, '0');
+      const selectBtn = card.querySelector('.btn-select');
+      if(selectBtn) selectBtn.dataset.ref = ref;
+    });
+  }
+  numberPosterCards();
+
+  function renderCart(){
+    if(cart.length === 0){
+      cartItemsEl.innerHTML = '<p class="cart-empty">Aucune affiche choisie pour l\'instant. Clique sur "+ Choisir ce style" sous une affiche qui te plaît.</p>';
+    } else {
+      cartItemsEl.innerHTML = cart.map(item => `
+        <div class="cart-item" data-id="${item.id}">
+          <div class="ci-info">
+            <span class="ci-name">${item.ref ? '['+item.ref+'] ' : ''}${item.name}</span>
+            <span class="ci-tag">${item.tag}</span>
+            <div class="ci-qty">
+              <button type="button" data-qty="minus" data-id="${item.id}" aria-label="Réduire">−</button>
+              <span>${item.qty}</span>
+              <button type="button" data-qty="plus" data-id="${item.id}" aria-label="Augmenter">+</button>
+            </div>
+          </div>
+          <button class="ci-remove" data-remove="${item.id}" aria-label="Retirer">×</button>
+        </div>
+      `).join('');
+    }
+    const totalQty = cart.reduce((sum, i) => sum + i.qty, 0);
+    cartCount.textContent = totalQty;
+    cartCount.style.display = totalQty > 0 ? 'flex' : 'none';
+
+    const profile = getClientProfile();
+    let message = profile
+      ? `Bonjour Caporal Design 👋, je suis ${profile.name} (WhatsApp ${profile.phone}). Je suis intéressé(e) par le(s) style(s) suivant(s) :\n\n`
+      : "Bonjour Caporal Design 👋, je suis intéressé(e) par le(s) style(s) suivant(s) :\n\n";
+    if(cart.length === 0){
+      message += "(aucune affiche sélectionnée pour l'instant)";
+    } else {
+      cart.forEach((item, i) => {
+        message += `${i+1}. ${item.qty}x ${item.ref ? '['+item.ref+'] ' : ''}${item.name} — ${item.tag}\n`;
+      });
+    }
+    message += "\nPouvez-vous me faire une proposition dans ce style ?";
+    cartWhatsapp.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  }
+
+  function addToCart(id, name, tag, ref){
+    const existing = cart.find(i => i.id === id);
+    if(existing){ existing.qty += 1; }
+    else{ cart.push({ id, name, tag, ref, qty: 1 }); }
+    renderCart();
+  }
+  function removeFromCart(id){
+    cart = cart.filter(i => i.id !== id);
+    renderCart();
+    const btn = document.querySelector(`.btn-select[data-id="${id}"]`);
+    if(btn){ btn.classList.remove('selected'); btn.textContent = '+ Choisir ce style'; }
+  }
+  function changeQty(id, delta){
+    const item = cart.find(i => i.id === id);
+    if(!item) return;
+    item.qty += delta;
+    if(item.qty <= 0){ removeFromCart(id); }
+    else{ renderCart(); }
+  }
+
+  async function shareStyleToWhatsapp(btn, name, tag){
+    const card = btn.closest('.poster-card');
+    const img = card?.querySelector('img');
+    const imgSrc = img?.getAttribute('src');
+    const message = `Bonjour Caporal Design 👋, je suis intéressé(e) par le style "${name}" (${tag}). Pouvez-vous me faire une proposition dans ce style ?`;
+
+    // Essai 1 : partage natif avec l'image directement attachée (mobile)
+    try{
+      if(imgSrc && navigator.canShare){
+        const resp = await fetch(imgSrc);
+        const blob = await resp.blob();
+        const file = new File([blob], imgSrc.split('/').pop(), { type: blob.type || 'image/jpeg' });
+        if(navigator.canShare({ files: [file] })){
+          await navigator.share({ files: [file], text: message, title: name });
+          return;
+        }
+      }
+    }catch(e){
+      // l'utilisateur a annulé le partage, ou le navigateur ne supporte pas les fichiers : on continue vers le fallback
+    }
+
+    // Fallback : ouvre WhatsApp avec le message pré-rempli (sans image jointe)
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+  }
+
+  document.querySelectorAll('.btn-select').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.id;
+      const name = btn.dataset.name;
+      const tag = btn.dataset.tag;
+      const ref = btn.dataset.ref;
+      if(btn.classList.contains('selected')){
+        removeFromCart(id);
+      } else {
+        btn.classList.add('selected');
+        btn.textContent = '✓ Sélectionné';
+        addToCart(id, name, tag, ref);
+        openCart();
+        shareStyleToWhatsapp(btn, name, tag);
+      }
+    });
+  });
+
+  cartItemsEl.addEventListener('click', (e) => {
+    const removeId = e.target.dataset.remove;
+    if(removeId){ removeFromCart(removeId); return; }
+    const qtyAction = e.target.dataset.qty;
+    if(qtyAction){
+      const id = e.target.dataset.id;
+      changeQty(id, qtyAction === 'plus' ? 1 : -1);
+    }
+  });
+
+  renderCart();
+
+  /* ---------- PROFIL DASHBOARD ---------- */
+  const profileFab = document.getElementById('profileFab');
+  const profileOverlay = document.getElementById('profileOverlay');
+  const profileClose = document.getElementById('profileClose');
+  const profileStats = document.getElementById('profileStats');
+  const profileList = document.getElementById('profileList');
+  const profileSearch = document.getElementById('profileSearch');
+  const profileWa = document.getElementById('profileWa');
+  const profileGa = document.getElementById('profileGa');
+
+  const CAT_LABELS = { evenement:'Événement', service:'Service', commerce:'Commerce', immobilier:'Immobilier' };
+
+  function getPosterData(){
+    return Array.from(document.querySelectorAll('.poster-card')).map(card => ({
+      name: card.querySelector('.name')?.textContent || '',
+      tag: card.querySelector('.tag')?.textContent || '',
+      cat: card.dataset.cat || ''
+    }));
+  }
+
+  function renderProfile(){
+    const posters = getPosterData();
+    const counts = {};
+    posters.forEach(p => { counts[p.cat] = (counts[p.cat] || 0) + 1; });
+
+    let statsHtml = `<div class="profile-stat"><span class="num">${posters.length}</span><span class="lbl">Affiches</span></div>`;
+    Object.keys(CAT_LABELS).forEach(cat => {
+      if(counts[cat]){
+        statsHtml += `<div class="profile-stat"><span class="num">${counts[cat]}</span><span class="lbl">${CAT_LABELS[cat]}</span></div>`;
+      }
+    });
+    profileStats.innerHTML = statsHtml;
+
+    renderProfileList(posters);
+
+    profileWa.textContent = '+' + WHATSAPP_NUMBER;
+    const gaId = localStorage.getItem('cd_ga_id');
+    profileGa.innerHTML = gaId
+      ? `<span class="profile-dot on"></span>Actif`
+      : `<span class="profile-dot off"></span>Non configuré`;
+  }
+
+  function renderProfileList(posters){
+    if(posters.length === 0){
+      profileList.innerHTML = '<p class="cart-empty">Aucune affiche trouvée.</p>';
+      return;
+    }
+    profileList.innerHTML = posters.map(p => `
+      <div class="profile-list-item">
+        <span>${p.name}</span>
+        <span class="pl-tag">${p.tag}</span>
+      </div>
+    `).join('');
+  }
+
+  profileSearch.addEventListener('input', () => {
+    const q = profileSearch.value.toLowerCase();
+    const filtered = getPosterData().filter(p => p.name.toLowerCase().includes(q) || p.tag.toLowerCase().includes(q));
+    renderProfileList(filtered);
+  });
+
+  function openProfile(){ renderProfile(); profileOverlay.classList.add('open'); }
+  function closeProfile(){ profileOverlay.classList.remove('open'); }
+  profileFab.addEventListener('click', openProfile);
+  profileClose.addEventListener('click', closeProfile);
+  profileOverlay.addEventListener('click', (e) => { if(e.target === profileOverlay) closeProfile(); });
+
+  /* ---------- ESPACE CLIENT (vrai compte : connexion / création via API + base de données) ---------- */
+  const accountNavBtn = document.getElementById('accountNavBtn');
+  const accountOverlay = document.getElementById('accountOverlay');
+  const accountModalTitle = document.getElementById('accountModalTitle');
+  const accountModalSub = document.getElementById('accountModalSub');
+  const accountError = document.getElementById('accountError');
+  const accountTabLogin = document.getElementById('accountTabLogin');
+  const accountTabSignup = document.getElementById('accountTabSignup');
+  const accountLoginView = document.getElementById('accountLoginView');
+  const accountSignupView = document.getElementById('accountSignupView');
+  const accountWelcomeView = document.getElementById('accountWelcomeView');
+  const accountEditView = document.getElementById('accountEditView');
+
+  const loginEmailInput = document.getElementById('loginEmailInput');
+  const loginPasswordInput = document.getElementById('loginPasswordInput');
+  const accountLoginBtn = document.getElementById('accountLoginBtn');
+  const accountCancelBtn = document.getElementById('accountCancelBtn');
+
+  const signupNameInput = document.getElementById('signupNameInput');
+  const signupEmailInput = document.getElementById('signupEmailInput');
+  const signupPhoneInput = document.getElementById('signupPhoneInput');
+  const signupPasswordInput = document.getElementById('signupPasswordInput');
+  const accountSignupBtn = document.getElementById('accountSignupBtn');
+  const accountCancelBtn2 = document.getElementById('accountCancelBtn2');
+
+  const accountWelcomeText = document.getElementById('accountWelcomeText');
+  const accountEditBtn = document.getElementById('accountEditBtn');
+  const accountLogoutBtn = document.getElementById('accountLogoutBtn');
+  const accountCloseBtn = document.getElementById('accountCloseBtn');
+
+  const editNameInput = document.getElementById('editNameInput');
+  const editPhoneInput = document.getElementById('editPhoneInput');
+  const accountEditSaveBtn = document.getElementById('accountEditSaveBtn');
+  const accountEditCancelBtn = document.getElementById('accountEditCancelBtn');
+
+  function getSession(){
+    try{ return JSON.parse(localStorage.getItem('cd_session')); }
+    catch(e){ return null; }
+  }
+  function saveSession(token, user){
+    localStorage.setItem('cd_session', JSON.stringify({ token, name: user.name, phone: user.phone, email: user.email }));
+    updateAccountNavLabel();
+  }
+  function clearSession(){
+    localStorage.removeItem('cd_session');
+    updateAccountNavLabel();
+  }
+  // Compatibilité avec le reste du site (message WhatsApp du panier, etc.)
+  function getClientProfile(){
+    const s = getSession();
+    return s ? { name: s.name, phone: s.phone } : null;
+  }
+  function updateAccountNavLabel(){
+    const s = getSession();
+    accountNavBtn.textContent = s ? `👋 ${s.name.split(' ')[0]}` : '👤 Mon compte';
+  }
+  updateAccountNavLabel();
+
+  function hideAllAccountViews(){
+    accountLoginView.style.display = 'none';
+    accountSignupView.style.display = 'none';
+    accountWelcomeView.style.display = 'none';
+    accountEditView.style.display = 'none';
+    accountTabLogin.style.display = 'none';
+    accountTabSignup.style.display = 'none';
+    accountError.style.display = 'none';
+  }
+
+  function showLoginView(){
+    hideAllAccountViews();
+    accountModalTitle.textContent = 'Mon compte';
+    accountModalSub.textContent = "Connecte-toi, ou crée ton compte si c'est ta première visite.";
+    accountTabLogin.style.display = '';
+    accountTabSignup.style.display = '';
+    accountTabLogin.style.background = 'var(--text)';
+    accountTabLogin.style.color = 'var(--bg)';
+    accountTabSignup.style.background = 'none';
+    accountTabSignup.style.color = 'var(--text)';
+    accountLoginView.style.display = 'block';
+    loginPasswordInput.value = '';
+  }
+  function showSignupView(){
+    hideAllAccountViews();
+    accountModalTitle.textContent = 'Mon compte';
+    accountModalSub.textContent = "Connecte-toi, ou crée ton compte si c'est ta première visite.";
+    accountTabLogin.style.display = '';
+    accountTabSignup.style.display = '';
+    accountTabSignup.style.background = 'var(--text)';
+    accountTabSignup.style.color = 'var(--bg)';
+    accountTabLogin.style.background = 'none';
+    accountTabLogin.style.color = 'var(--text)';
+    accountSignupView.style.display = 'block';
+    signupPasswordInput.value = '';
+  }
+  function showAccountWelcome(){
+    const s = getSession();
+    hideAllAccountViews();
+    accountModalTitle.textContent = 'Mon compte';
+    accountModalSub.textContent = '';
+    accountWelcomeText.innerHTML = `Content de te revoir, <b>${s.name}</b> 👋<br>Email : ${s.email}<br>WhatsApp : ${s.phone || '—'}`;
+    accountWelcomeView.style.display = 'block';
+  }
+  function showEditView(){
+    const s = getSession();
+    hideAllAccountViews();
+    accountModalTitle.textContent = 'Modifier mes infos';
+    accountModalSub.textContent = '';
+    editNameInput.value = s.name || '';
+    editPhoneInput.value = s.phone || '';
+    accountEditView.style.display = 'block';
+  }
+
+  function openAccountModal(){
+    const s = getSession();
+    if(s){ showAccountWelcome(); } else { showLoginView(); }
+    accountOverlay.classList.add('open');
+  }
+  function closeAccountModal(){
+    if(accountForced) return; // on ne peut pas fermer tant qu'on n'est pas connecté
+    accountOverlay.classList.remove('open');
+  }
+
+  function showAccountError(msg){
+    accountError.textContent = msg;
+    accountError.style.display = 'block';
+  }
+
+  let accountForced = false;
+  function maybeForceAccountCreation(){
+    if(!getSession()){
+      accountForced = true;
+      showLoginView();
+      accountModalSub.textContent = "Bienvenue ! Connecte-toi, ou crée ton compte si c'est ta première visite.";
+      accountCancelBtn.style.display = 'none';
+      accountCancelBtn2.style.display = 'none';
+      accountOverlay.classList.add('open');
+    }
+  }
+  function releaseForcedAccount(){
+    accountForced = false;
+    accountCancelBtn.style.display = '';
+    accountCancelBtn2.style.display = '';
+    accountOverlay.classList.remove('open');
+  }
+
+  accountNavBtn.addEventListener('click', () => {
+    const navLinksEl = document.getElementById('navLinks');
+    if(navLinksEl) navLinksEl.classList.remove('open');
+    openAccountModal();
+  });
+  accountCancelBtn.addEventListener('click', closeAccountModal);
+  accountCancelBtn2.addEventListener('click', closeAccountModal);
+  accountCloseBtn.addEventListener('click', closeAccountModal);
+  accountOverlay.addEventListener('click', (e) => { if(e.target === accountOverlay) closeAccountModal(); });
+
+  accountTabLogin.addEventListener('click', showLoginView);
+  accountTabSignup.addEventListener('click', showSignupView);
+
+  function setBtnLoading(btn, loading, label){
+    btn.disabled = loading;
+    btn.textContent = loading ? 'Chargement…' : label;
+  }
+
+  accountLoginBtn.addEventListener('click', async () => {
+    const email = loginEmailInput.value.trim();
+    const password = loginPasswordInput.value;
+    accountError.style.display = 'none';
+    if(!email || !password){
+      showAccountError('Renseigne ton email et ton mot de passe.');
+      return;
+    }
+    setBtnLoading(accountLoginBtn, true, 'Se connecter');
+    try{
+      const cred = await window.FB.signInWithEmailAndPassword(window.FB.auth, email, password);
+      const snap = await window.FB.getDoc(window.FB.doc(window.FB.db, 'users', cred.user.uid));
+      const profile = snap.exists() ? snap.data() : { name: email.split('@')[0], phone: '', email };
+      saveSession(cred.user.uid, profile);
+      renderCart();
+      if(accountForced){ releaseForcedAccount(); }
+      else { showAccountWelcome(); }
+    }catch(err){
+      let msg = 'Connexion impossible.';
+      if(['auth/invalid-credential','auth/wrong-password','auth/user-not-found','auth/invalid-email'].includes(err.code)){
+        msg = 'Email ou mot de passe incorrect.';
+      }
+      showAccountError(msg);
+    }finally{
+      setBtnLoading(accountLoginBtn, false, 'Se connecter');
+    }
+  });
+
+  accountSignupBtn.addEventListener('click', async () => {
+    const name = signupNameInput.value.trim();
+    const email = signupEmailInput.value.trim();
+    const phone = signupPhoneInput.value.trim();
+    const password = signupPasswordInput.value;
+    accountError.style.display = 'none';
+    if(!name || !email || !password){
+      showAccountError('Nom, email et mot de passe sont obligatoires.');
+      return;
+    }
+    if(password.length < 6){
+      showAccountError('Le mot de passe doit faire au moins 6 caractères.');
+      return;
+    }
+    setBtnLoading(accountSignupBtn, true, 'Créer mon compte');
+    try{
+      const cred = await window.FB.createUserWithEmailAndPassword(window.FB.auth, email, password);
+      const profile = { name, email, phone, createdAt: window.FB.serverTimestamp() };
+      await window.FB.setDoc(window.FB.doc(window.FB.db, 'users', cred.user.uid), profile);
+      saveSession(cred.user.uid, { name, email, phone });
+      renderCart();
+      sendWhatsAppNotification(`🆕 Nouveau compte créé sur ton site !\nNom : ${name}\nEmail : ${email}\nWhatsApp : ${phone || '—'}`);
+      if(accountForced){ releaseForcedAccount(); }
+      else { showAccountWelcome(); }
+    }catch(err){
+      let msg = 'Création du compte impossible.';
+      if(err.code === 'auth/email-already-in-use'){
+        msg = 'Un compte existe déjà avec cet email.';
+        loginEmailInput.value = email;
+        setTimeout(showLoginView, 1400);
+      } else if(err.code === 'auth/invalid-email'){
+        msg = 'Adresse email invalide.';
+      } else if(err.code === 'auth/weak-password'){
+        msg = 'Mot de passe trop faible (6 caractères min.).';
+      }
+      showAccountError(msg);
+    }finally{
+      setBtnLoading(accountSignupBtn, false, 'Créer mon compte');
+    }
+  });
+
+  accountEditBtn.addEventListener('click', showEditView);
+  accountEditCancelBtn.addEventListener('click', showAccountWelcome);
+
+  accountEditSaveBtn.addEventListener('click', async () => {
+    const s = getSession();
+    const name = editNameInput.value.trim();
+    const phone = editPhoneInput.value.trim();
+    if(!name){
+      alert('Le nom est obligatoire.');
+      return;
+    }
+    setBtnLoading(accountEditSaveBtn, true, 'Enregistrer');
+    try{
+      await window.FB.updateDoc(window.FB.doc(window.FB.db, 'users', s.token), { name, phone });
+      saveSession(s.token, { name, phone, email: s.email });
+      renderCart();
+      showAccountWelcome();
+    }catch(err){
+      alert('Modification impossible. Réessaie dans un instant.');
+    }finally{
+      setBtnLoading(accountEditSaveBtn, false, 'Enregistrer');
+    }
+  });
+
+  accountLogoutBtn.addEventListener('click', () => {
+    if(confirm('Te déconnecter de ce compte sur cet appareil ?')){
+      clearSession();
+      renderCart();
+      showLoginView();
+    }
+  });
+
+  /* ---------- MODE ADMIN ---------- */
+  const ADMIN_EMAIL = "Anicetulrich225@gmail.com";
+  const adminFab = document.getElementById('adminFab');
+  const adminLoginOverlay = document.getElementById('adminLoginOverlay');
+  const adminPassInput = document.getElementById('adminPassInput');
+  const adminLoginBtn = document.getElementById('adminLoginBtn');
+  const adminCancelBtn = document.getElementById('adminCancelBtn');
+  const adminError = document.getElementById('adminError');
+  const adminModalTitle = document.getElementById('adminModalTitle');
+  const adminModalSub = document.getElementById('adminModalSub');
+  const adminCopyBtn = document.getElementById('adminCopyBtn');
+  const adminExportBtn = document.getElementById('adminExportBtn');
+  const adminLogoutBtn = document.getElementById('adminLogoutBtn');
+  const addPosterCardBtn = document.getElementById('addPosterCard');
+  const posterFormOverlay = document.getElementById('posterFormOverlay');
+  const posterFileInput = document.getElementById('posterFileInput');
+  const posterPreview = document.getElementById('posterPreview');
+  const posterNameInput = document.getElementById('posterNameInput');
+  const posterTagSelect = document.getElementById('posterTagSelect');
+  const posterFormSave = document.getElementById('posterFormSave');
+  const posterFormCancel = document.getElementById('posterFormCancel');
+  const wallEl = document.getElementById('wall');
+
+  function isAdmin(){
+    if(sessionStorage.getItem('cd_admin_on') !== '1') return false;
+    const expires = Number(sessionStorage.getItem('cd_admin_token_exp') || 0);
+    if(!expires || Date.now() > expires){
+      sessionStorage.removeItem('cd_admin_on');
+      sessionStorage.removeItem('cd_admin_token');
+      sessionStorage.removeItem('cd_admin_token_exp');
+      return false;
+    }
+    return true;
+  }
+
+  function ensureDeleteButtons(){
+    document.querySelectorAll('.poster-card').forEach(card => {
+      if(!card.querySelector('.poster-delete-btn')){
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'poster-delete-btn';
+        btn.setAttribute('aria-label','Supprimer cette affiche');
+        btn.textContent = '🗑';
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if(confirm('Supprimer cette affiche du site ?')){
+            card.remove();
+          }
+        });
+        card.prepend(btn);
+      }
+    });
+  }
+  ensureDeleteButtons();
+
+  /* ---------- LIKES (cœur par affiche) ---------- */
+  function getLikedSet(){
+    try{ return new Set(JSON.parse(localStorage.getItem('cd_liked_posters')) || []); }
+    catch(e){ return new Set(); }
+  }
+  function saveLikedSet(set){
+    localStorage.setItem('cd_liked_posters', JSON.stringify(Array.from(set)));
+  }
+  function posterKey(card){
+    return card.querySelector('.btn-select')?.dataset.id || card.querySelector('.name')?.textContent || '';
+  }
+  function ensureLikeButtons(){
+    const liked = getLikedSet();
+    document.querySelectorAll('.poster-card').forEach(card => {
+      if(!card.querySelector('.poster-like-btn')){
+        const key = posterKey(card);
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'poster-like-btn';
+        btn.setAttribute('aria-label', "J'aime cette affiche");
+        const isLiked = liked.has(key);
+        btn.innerHTML = isLiked ? '♥' : '♡';
+        if(isLiked) btn.classList.add('liked');
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const set = getLikedSet();
+          const k = posterKey(card);
+          if(set.has(k)){
+            set.delete(k);
+            btn.classList.remove('liked');
+            btn.innerHTML = '♡';
+          } else {
+            set.add(k);
+            btn.classList.add('liked');
+            btn.innerHTML = '♥';
+            btn.classList.add('pulse');
+            setTimeout(() => btn.classList.remove('pulse'), 300);
+          }
+          saveLikedSet(set);
+        });
+        card.prepend(btn);
+      }
+    });
+  }
+  ensureLikeButtons();
+
+  function setAdminMode(on){
+    document.body.classList.toggle('admin-mode', on);
+    sessionStorage.setItem('cd_admin_on', on ? '1' : '0');
+    if(!on){
+      sessionStorage.removeItem('cd_admin_token');
+      sessionStorage.removeItem('cd_admin_token_exp');
+    }
+  }
+  if(isAdmin()){ setAdminMode(true); }
+
+  function openAdminLogin(){
+    renderAdminModal();
+    adminLoginOverlay.classList.add('open');
+  }
+  function closeAdminLogin(){ adminLoginOverlay.classList.remove('open'); }
+
+  function renderAdminModal(){
+    adminError.style.display = 'none';
+    adminPassInput.value = '';
+    adminModalTitle.textContent = 'Connexion propriétaire';
+    adminModalSub.textContent = 'Entre ton mot de passe pour passer en mode Admin.';
+    adminPassInput.style.display = 'block';
+    adminPassInput.placeholder = 'Mot de passe';
+    adminLoginBtn.textContent = 'Se connecter';
+    adminPassInput.focus();
+  }
+
+  adminFab.addEventListener('click', () => {
+    if(isAdmin()){ setAdminMode(false); }
+    else{ openAdminLogin(); }
+  });
+  adminCancelBtn.addEventListener('click', closeAdminLogin);
+  adminLoginOverlay.addEventListener('click', (e) => { if(e.target === adminLoginOverlay) closeAdminLogin(); });
+
+  adminLoginBtn.addEventListener('click', async () => {
+    const val = adminPassInput.value.trim();
+    if(!val){ return; }
+
+    adminLoginBtn.disabled = true;
+    const originalLabel = adminLoginBtn.textContent;
+    adminLoginBtn.textContent = 'Vérification...';
+    adminError.style.display = 'none';
+
+    try{
+      const cred = await window.FB.signInWithEmailAndPassword(window.FB.auth, ADMIN_EMAIL, val);
+      if(cred.user.email.toLowerCase() !== ADMIN_EMAIL.toLowerCase()){
+        throw { code: 'auth/wrong-password' };
+      }
+      sessionStorage.setItem('cd_admin_token', cred.user.uid);
+      sessionStorage.setItem('cd_admin_token_exp', String(Date.now() + 12 * 3600 * 1000));
+      setAdminMode(true);
+      closeAdminLogin();
+    } catch(err){
+      adminError.textContent = 'Mot de passe incorrect.';
+      adminError.style.display = 'block';
+    }finally{
+      adminLoginBtn.disabled = false;
+      adminLoginBtn.textContent = originalLabel;
+    }
+  });
+  adminPassInput.addEventListener('keydown', (e) => { if(e.key === 'Enter') adminLoginBtn.click(); });
+
+  adminLogoutBtn.addEventListener('click', () => setAdminMode(false));
+
+  /* ---------- LISTE DES INSCRITS (admin) ---------- */
+  const adminUsersBtn = document.getElementById('adminUsersBtn');
+  const usersOverlay = document.getElementById('usersOverlay');
+  const usersList = document.getElementById('usersList');
+  const usersCount = document.getElementById('usersCount');
+  const usersCloseBtn = document.getElementById('usersCloseBtn');
+
+  adminUsersBtn.addEventListener('click', async () => {
+    usersOverlay.classList.add('open');
+    usersList.innerHTML = '<p style="color:var(--ink-soft); font-size:13px;">Chargement…</p>';
+    usersCount.textContent = '';
+    try{
+      const q = window.FB.query(window.FB.collection(window.FB.db, 'users'), window.FB.orderBy('createdAt', 'desc'));
+      const snap = await window.FB.getDocs(q);
+      if(snap.empty){
+        usersList.innerHTML = '<p style="color:var(--ink-soft); font-size:13px;">Aucun inscrit pour le moment.</p>';
+        usersCount.textContent = '';
+        return;
+      }
+      usersCount.textContent = snap.size + ' inscrit(s)';
+      usersList.innerHTML = '';
+      snap.forEach(docSnap => {
+        const u = docSnap.data();
+        const row = document.createElement('div');
+        row.className = 'user-row';
+        row.innerHTML = `
+          <span class="u-name">${u.name || '—'}</span>
+          <span class="u-email">${u.email || '—'}</span>
+          <span class="u-phone">📱 ${u.phone || '—'}</span>
+        `;
+        usersList.appendChild(row);
+      });
+    }catch(err){
+      usersList.innerHTML = '<p style="color:var(--coral); font-size:13px;">Impossible de charger la liste. Vérifie les règles Firestore.</p>';
+    }
+  });
+  usersCloseBtn.addEventListener('click', () => usersOverlay.classList.remove('open'));
+  usersOverlay.addEventListener('click', (e) => { if(e.target === usersOverlay) usersOverlay.classList.remove('open'); });
+
+  /* Ajout d'affiche */
+  let pendingImageData = null;
+  addPosterCardBtn.addEventListener('click', () => {
+    posterFileInput.value = '';
+    posterNameInput.value = '';
+    posterPreview.style.display = 'none';
+    pendingImageData = null;
+    posterFormOverlay.classList.add('open');
+  });
+  posterFormCancel.addEventListener('click', () => posterFormOverlay.classList.remove('open'));
+  posterFormOverlay.addEventListener('click', (e) => { if(e.target === posterFormOverlay) posterFormOverlay.classList.remove('open'); });
+
+  posterFileInput.addEventListener('change', () => {
+    const file = posterFileInput.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      pendingImageData = reader.result;
+      posterPreview.src = pendingImageData;
+      posterPreview.style.display = 'block';
+    };
+    reader.readAsDataURL(file);
+  });
+
+  posterFormSave.addEventListener('click', () => {
+    if(!pendingImageData || !posterNameInput.value.trim()){
+      alert('Choisis une image et donne un nom à l\'affiche.');
+      return;
+    }
+    const name = posterNameInput.value.trim();
+    const tag = posterTagSelect.value;
+    const catMap = { 'Événement':'evenement', 'Service':'service', 'Commerce':'commerce', 'Immobilier':'immobilier' };
+    const cat = catMap[tag];
+    const nextId = 'p' + (document.querySelectorAll('.poster-card').length + 1) + '_' + Date.now();
+
+    const card = document.createElement('div');
+    card.className = 'poster-card';
+    card.dataset.cat = cat;
+    card.innerHTML = `
+      <img src="${pendingImageData}" alt="${name}">
+      <div class="poster-meta"><span class="name">${name}</span><span class="tag">${tag}</span></div>
+      <button class="btn-select" type="button" data-id="${nextId}" data-name="${name}" data-tag="${tag}">+ Choisir ce style</button>
+    `;
+    wallEl.insertBefore(card, addPosterCardBtn);
+    ensureDeleteButtons();
+    ensureLikeButtons();
+    numberPosterCards();
+    card.querySelector('.btn-select').addEventListener('click', function(){
+      const id = this.dataset.id, nm = this.dataset.name, tg = this.dataset.tag, rf = this.dataset.ref;
+      if(this.classList.contains('selected')){ removeFromCart(id); }
+      else{ this.classList.add('selected'); this.textContent = '✓ Sélectionné'; addToCart(id, nm, tg, rf); openCart(); }
+    });
+    posterFormOverlay.classList.remove('open');
+  });
+
+  /* Export du site (fichier HTML à jour) */
+  function buildExportHtml(){
+    document.body.classList.remove('admin-mode');
+    const clone = document.documentElement.cloneNode(true);
+    document.body.classList.toggle('admin-mode', isAdmin());
+    clone.querySelectorAll('.poster-delete-btn').forEach(b => b.remove());
+    return '<!DOCTYPE html>\n' + clone.outerHTML;
+  }
+
+  adminCopyBtn.addEventListener('click', async () => {
+    const html = buildExportHtml();
+    try{
+      await navigator.clipboard.writeText(html);
+      alert("✅ Code copié !\n\nMaintenant sur GitHub :\n1. Ouvre ton fichier index.html sur github.com (icône crayon pour éditer)\n2. Sélectionne tout le contenu existant et supprime-le\n3. Colle (appui long → Coller)\n4. Clique \"Commit changes\" en bas\n\nTon site sera mis à jour en 1 à 2 minutes.");
+    }catch(err){
+      // Repli : zone de texte sélectionnable manuellement
+      const ta = document.createElement('textarea');
+      ta.value = html;
+      ta.style.position = 'fixed';
+      ta.style.top = '0';
+      ta.style.left = '0';
+      ta.style.width = '100%';
+      ta.style.height = '100%';
+      ta.style.zIndex = '9999';
+      ta.style.fontSize = '12px';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      alert("La copie automatique n'a pas fonctionné. Une zone de texte vient de s'ouvrir : fais un appui long dedans, choisis \"Tout sélectionner\" puis \"Copier\". Ensuite appuie n'importe où en dehors pour fermer, et colle le code sur GitHub.");
+      ta.addEventListener('blur', () => ta.remove(), { once:true });
+    }
+  });
+
+  adminExportBtn.addEventListener('click', async () => {
+    const html = buildExportHtml();
+    const blob = new Blob([html], { type: 'text/html' });
+    const file = new File([blob], 'index.html', { type: 'text/html' });
+
+    // Méthode 1 : partage natif (le plus fiable sur mobile / iPhone)
+    if(navigator.canShare && navigator.canShare({ files: [file] })){
+      try{
+        await navigator.share({ files: [file], title: 'index.html' });
+        return;
+      }catch(err){
+        if(err && err.name === 'AbortError') return; // annulé par l'utilisateur
+        // sinon on continue vers les méthodes suivantes
+      }
+    }
+
+    // Méthode 2 : téléchargement classique
+    try{
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'index.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 4000);
+      alert("Téléchargement lancé. S'il ne se lance pas automatiquement, vérifie ton dossier Téléchargements/Fichiers, ou réessaie depuis le site publié sur GitHub (pas depuis un aperçu Claude).");
+      return;
+    }catch(err){
+      // Méthode 3 : ouvrir dans un nouvel onglet en dernier recours
+      const url = URL.createObjectURL(blob);
+      window.open(url, '_blank');
+      alert("Le téléchargement direct n'a pas fonctionné. La page s'est ouverte dans un nouvel onglet : utilise le menu de ton navigateur (partager / imprimer / enregistrer) pour sauvegarder cette page en tant que fichier.");
+    }
+  });
+
+  /* ---------- PAIEMENT ORANGE MONEY ---------- */
+  const omPayBtn = document.getElementById('omPayBtn');
+  if(omPayBtn){
+    omPayBtn.addEventListener('click', async () => {
+      const number = '0747626380';
+      try{ await navigator.clipboard.writeText(number); }catch(e){}
+      alert("Numéro Orange Money copié : " + number + "\n\nPour payer :\n1. Compose #144# sur ton téléphone (ou ouvre l'appli Orange Money → \"Payer marchand\")\n2. Entre ce numéro comme destinataire\n3. Indique le montant et valide avec ton code secret");
+    });
+  }
+
+  /* ---------- LIGHTBOX (affiche en grand) ---------- */
+  const lightboxOverlay = document.getElementById('lightboxOverlay');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxName = document.getElementById('lightboxName');
+  const lightboxTag = document.getElementById('lightboxTag');
+  const lightboxClose = document.getElementById('lightboxClose');
+
+  function openLightbox(src, name, tag){
+    lightboxImg.src = src;
+    lightboxName.textContent = name;
+    lightboxTag.textContent = tag;
+    lightboxOverlay.classList.add('open');
+  }
+  function closeLightbox(){
+    lightboxOverlay.classList.remove('open');
+    lightboxImg.src = '';
+  }
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxOverlay.addEventListener('click', (e) => { if(e.target === lightboxOverlay) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeLightbox(); });
+
+  const founderPhoto = document.getElementById('founderPhoto');
+  if(founderPhoto){
+    founderPhoto.addEventListener('click', () => {
+      const img = founderPhoto.querySelector('img');
+      if(img) openLightbox(img.src, 'CAPORAL DESIGN', 'Fondateur & Directeur artistique');
+    });
+  }
+
+  if(wallEl){
+    wallEl.addEventListener('click', (e) => {
+      if(e.target.closest('button')) return; // ignore clics sur cœur / suppression / choisir ce style
+      const card = e.target.closest('.poster-card');
+      if(!card) return;
+      const img = card.querySelector('img');
+      if(!img) return;
+      const name = card.querySelector('.name')?.textContent || '';
+      const tag = card.querySelector('.tag')?.textContent || '';
+      openLightbox(img.src, name, tag);
+    });
+  }
+
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  const refreshBtn = document.getElementById('refreshBtn');
+  if(refreshBtn){
+    refreshBtn.addEventListener('click', () => {
+      refreshBtn.classList.add('spinning');
+      window.location.reload();
+    });
+  }
+
+  const chips = document.querySelectorAll('.chip');
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      const filter = chip.dataset.filter;
+      document.querySelectorAll('.poster-card').forEach(card => {
+        if (filter === 'all' || card.dataset.cat === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  const searchInput = document.getElementById('siteSearchInput');
+  const searchClear = document.getElementById('siteSearchClear');
+  const noResults = document.getElementById('searchNoResults');
+  if(searchInput){
+    const runSearch = () => {
+      const q = searchInput.value.trim().toLowerCase();
+      searchClear.classList.toggle('show', q.length > 0);
+      const cards = document.querySelectorAll('.poster-card');
+      let visibleCount = 0;
+      if(q === ''){
+        const activeChip = document.querySelector('.chip.active') || document.querySelector('.chip[data-filter="all"]');
+        const filter = activeChip ? activeChip.dataset.filter : 'all';
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.cat === filter) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+        noResults.classList.remove('show');
+        return;
+      }
+      cards.forEach(card => {
+        const name = card.querySelector('.name')?.textContent.toLowerCase() || '';
+        const tag = card.querySelector('.tag')?.textContent.toLowerCase() || '';
+        const cat = card.dataset.cat?.toLowerCase() || '';
+        if(name.includes(q) || tag.includes(q) || cat.includes(q)){
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+      noResults.classList.toggle('show', visibleCount === 0);
+    };
+    searchInput.addEventListener('input', runSearch);
+    searchInput.addEventListener('focus', () => {
+      document.getElementById('galerie')?.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+    searchClear.addEventListener('click', () => {
+      searchInput.value = '';
+      runSearch();
+      searchInput.focus();
+    });
+  }
+</script>
+
+
+
+<iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" tabindex="-1" vspace="0" width="100%" aria-hidden="true" id="I0_1783800548621" name="I0_1783800548621" src="https://caporaldesign-53b93.firebaseapp.com/__/auth/iframe?apiKey=AIzaSyCmDLLYn3zFCbWCCD7EE-NaiCcKa-CzGwE&amp;appName=%5BDEFAULT%5D&amp;v=10.12.2&amp;eid=p&amp;usegapi=1&amp;jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.fr.nlcSf1XiR_U.O%2Fd%3D1%2Frs%3DAHpOoo9DDegfHzV0ObBsXUYCy3nKOBYL1Q%2Fm%3D__features__#id=I0_1783800548621&amp;_gfid=I0_1783800548621&amp;parent=https%3A%2F%2Fcaporaldesign-huit.vercel.app&amp;pfname=&amp;rpctoken=22124218" style="position: absolute; top: -100px; width: 1px; height: 1px;"></iframe></body></html>
